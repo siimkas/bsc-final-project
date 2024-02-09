@@ -1,0 +1,10 @@
+"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
+1;"L  G  H,L  G  H";"JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical";2;"Conn_01x03";;;
+2;"C2";"C_0805_2012Metric_Pad1.18x1.45mm_HandSolder";1;"4.7nF";;;
+3;"D1";"SOT-23";1;"NUP2105L";;;
+4;"C1";"C_0805_2012Metric_Pad1.18x1.45mm_HandSolder";1;"100nF";;;
+5;"SN65HVD230";"SOIC-8_3.9x4.9mm_P1.27mm";1;"SN65HVD230";;;
+6;"J4,J5";"PinHeader_1x02_P2.54mm_Vertical";2;"Conn_01x02";;;
+7;"C4,C3";"C_0805_2012Metric_Pad1.18x1.45mm_HandSolder";2;"100pF";;;
+8;"R2,R1";"R_0805_2012Metric_Pad1.20x1.40mm_HandSolder";2;"60";;;
+9;"Rx";"PinHeader_1x04_P2.54mm_Vertical";1;"Conn_01x04";;;

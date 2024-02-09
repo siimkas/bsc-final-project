@@ -1,2 +1,3 @@
-# bsc-final-project
-Final project of Digital Systems and Design
+# Final project of Digital Systems and Design BSc
+
+Coming soon...

@@ -1,0 +1,127 @@
+esphome:
+  name: can-gateway
+  friendly_name: CAN-Gateway
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+external_components:
+  - source: github://mrk-its/esphome-canopen@siim_k
+
+# Enable logging
+logger:
+  # level: VERBOSE
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "Onrz10Z5UO4vFOhPK+uudqLhFb8lunNv7+sBf6f9u90="
+
+ota:
+  password: "998be0f3a36cb89dffefa2d310a3db35"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Can-Gateway Fallback Hotspot"
+    password: "pLOBs6yOjMFM"
+
+mqtt:
+  broker: homeassistant.local
+  username: mqtt
+  password: mqtt
+  id: mosquitto
+
+canbus:
+  - platform: esp32_can
+    id: can_bus
+    rx_pin: GPIO18
+    tx_pin: GPIO19
+    can_id: 0
+    bit_rate: 125kbps
+
+canopen:
+  id: can_gate
+  canbus_id: can_bus
+  mqtt_id: mosquitto
+  node_id: 0
+  heartbeat_clients:
+    - node_id: 1
+      timeout: 1s
+    - node_id: 2
+      timeout: 1s
+    - node_id: 3
+      timeout: 1s
+  entities:
+
+
+sensor:
+
+  - platform: template
+    name: "Bus Error Count"
+    id: can_status_bus_err
+    lambda: return id(can_gate).status.bus_err;
+    accuracy_decimals: 0
+
+  - platform: template
+    name: "Missed Node 1 Heartbeats"
+    id: can_status_missed_heartbeats_1
+    lambda: return id(can_gate).get_heartbeat_events(1);
+    accuracy_decimals: 0
+    update_interval: 10s
+
+  - platform: template
+    name: "Missed Node 2 Heartbeats"
+    id: can_status_missed_heartbeats_2
+    lambda: return id(can_gate).get_heartbeat_events(2);
+    accuracy_decimals: 0
+    update_interval: 10s
+
+  - platform: template
+    name: "Missed Node 3 Heartbeats"
+    id: can_status_missed_heartbeats_3
+    lambda: return id(can_gate).get_heartbeat_events(3);
+    accuracy_decimals: 0
+    update_interval: 10s
+    
+text_sensor:
+  - platform: template
+    name: "CANOpen Status"
+    id: canopen_status
+    lambda: |
+      static std::string states[] = {"STOPPED", "RUNNING", "BUS_OFF", "RECOVERING"};
+      return states[id(can_gate).status.state];
+    update_interval: 5s
+
+    on_value:
+      - if:
+          condition:
+            for:
+              time: 60s
+              condition:
+                text_sensor.state:
+                  id: canopen_status
+                  state: BUS_OFF
+          then:
+            - logger.log:
+                level: WARN
+                format: "Bus off for 60s, resetting"
+            - lambda: id(can_gate).initiate_recovery();
+      - if:
+          condition:
+            for:
+              time: 30s
+              condition:
+                text_sensor.state:
+                  id: canopen_status
+                  state: STOPPED
+          then:
+            - logger.log:
+                level: WARN
+                format: "starting"
+            - lambda: id(can_gate).start();  

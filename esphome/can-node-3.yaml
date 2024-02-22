@@ -1,0 +1,89 @@
+esphome:
+  name: can-node-3
+  friendly_name: CAN-Node-3
+  includes:
+    - custom_components/PmodTMP3.h
+  libraries:
+    - "Wire"
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+external_components:
+  - source: github://mrk-its/esphome-canopen@siim_k
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "VaY/nwqQ29c3pqECB45vbUc2n+JntfVi6xUOs+iFcTU="
+
+ota:
+  password: "4e4a44ea6a9ce991050fdb6b14de70c3"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  id: wifi_component
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Can-Node-3 Fallback Hotspot"
+    password: "XGEvu5WeGtjs"
+
+canbus:
+  - platform: esp32_can
+    id: can_bus
+    rx_pin: GPIO16
+    tx_pin: GPIO17
+    can_id: 0
+    bit_rate: 125kbps
+    
+canopen:
+  id: can_gate
+  canbus_id: can_bus
+  node_id: 3
+  heartbeat_interval: 1s
+  entities:
+    - id: wifi_switch
+      tpdo: 0
+      index: 1
+      
+    - id: pmod_tmp3
+      tpdo: 0
+      index: 2
+
+i2c:
+  sda: GPIO21
+  scl: GPIO22
+  scan: true
+
+custom_component:
+  - lambda: |-
+      auto tmp3 = new PmodTMP3();
+      return {tmp3};
+    components:
+      - id: tmp3
+
+sensor:
+  - platform: custom
+    lambda: |-
+      return {static_cast<PmodTMP3 *>(id(tmp3))->tempC};
+    sensors:
+      - name: "Pmod TMP3 Temperature C"
+        id: pmod_tmp3
+        internal: true
+
+switch:
+  - platform: template
+    name: wifi
+    id: wifi_switch
+    internal: true
+    lambda: return !id(wifi_component).is_disabled();
+    turn_on_action:
+      - wifi.enable
+    turn_off_action:
+      - wifi.disable

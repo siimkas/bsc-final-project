@@ -45,7 +45,7 @@ canbus:
     rx_pin: GPIO23
     tx_pin: GPIO19
     can_id: 0
-    bit_rate: 125kbps
+    bit_rate: 500kbps
 
 canopen:
   id: can_gate
@@ -60,7 +60,10 @@ canopen:
     - id: adxl_activity
       tpdo: 0
       index: 2
-
+    
+    - id: light_switch
+      tpdo: 0
+      index: 3
       
 ###ADXL345###
 i2c:
@@ -88,6 +91,12 @@ binary_sensor:
         internal: true
         filters:
           - delayed_off: 5s 
+        on_press:
+          then:
+            - switch.turn_on: light_switch
+        on_release:
+          - then:
+            - switch.turn_off: light_switch
 
 switch:
   - platform: template
@@ -100,6 +109,7 @@ switch:
     turn_off_action:
       - wifi.disable
 
-
-
-    
+  - platform: template
+    id: light_switch
+    internal: True
+    optimistic: True

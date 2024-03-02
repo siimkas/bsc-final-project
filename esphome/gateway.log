@@ -1,0 +1,388 @@
+[17:01:16][I][app:102]: ESPHome version 2023.12.9 compiled on Mar  2 2024, 16:48:00
+[17:01:16][C][status_led:065]: Status Led Light:
+[17:01:16][C][status_led:066]:   Pin: GPIO15
+[17:01:16][D][canbus:072]: received can message (#1) std can_id=0x701 size=1
+[17:01:16][I][canopen:145]: received mqtt message on topic canbus/0/1794, len: 1, is_own: 1
+[17:01:16][C][status_led:065]: Status Led Light:
+[17:01:16][C][status_led:066]:   Pin: GPIO2
+[17:01:16][I][canopen:145]: received mqtt message on topic canbus/0/1793, len: 1, is_own: 1
+[17:01:16][C][logger:439]: Logger:
+[17:01:16][C][logger:440]:   Level: DEBUG
+[17:01:16][C][logger:441]:   Log Baud Rate: 115200
+[17:01:16][C][logger:443]:   Hardware UART: UART0
+[17:01:16][C][canbus:021]: config standard id=0x000
+[17:01:16][C][template.sensor:022]: Template Sensor 'Bus Error Count'
+[17:01:16][C][template.sensor:022]:   State Class: ''
+[17:01:16][C][template.sensor:022]:   Unit of Measurement: ''
+[17:01:16][C][template.sensor:022]:   Accuracy Decimals: 0
+[17:01:16][C][template.sensor:023]:   Update Interval: 60.0s
+[17:01:16][C][template.sensor:022]: Template Sensor 'Missed Node 1 Heartbeats'
+[17:01:16][C][template.sensor:022]:   State Class: ''
+[17:01:16][C][template.sensor:022]:   Unit of Measurement: ''
+[17:01:16][C][template.sensor:022]:   Accuracy Decimals: 0
+[17:01:16][C][template.sensor:023]:   Update Interval: 10.0s
+[17:01:16][C][template.sensor:022]: Template Sensor 'Missed Node 2 Heartbeats'
+[17:01:16][C][template.sensor:022]:   State Class: ''
+[17:01:16][C][template.sensor:022]:   Unit of Measurement: ''
+[17:01:16][C][template.sensor:022]:   Accuracy Decimals: 0
+[17:01:16][C][template.sensor:023]:   Update Interval: 10.0s
+[17:01:16][C][template.sensor:022]: Template Sensor 'Missed Node 3 Heartbeats'
+[17:01:16][C][template.sensor:022]:   State Class: ''
+[17:01:16][C][template.sensor:022]:   Unit of Measurement: ''
+[17:01:16][C][template.sensor:022]:   Accuracy Decimals: 0
+[17:01:16][C][template.sensor:023]:   Update Interval: 10.0s
+[17:01:16][D][canbus:072]: received can message (#1) std can_id=0x183 size=5
+[17:01:16][D][sensor:094]: 'temp_sensor': Sending state 25.81250  with 1 decimals of accuracy
+[17:01:16][I][canopen:145]: received mqtt message on topic canbus/0/387, len: 5, is_own: 1
+[17:01:16][C][template.text_sensor:020]: Template Sensor 'CANOpen Status'
+[17:01:16][C][ledc.output:164]: LEDC Output:
+[17:01:16][C][ledc.output:165]:   Pin GPIO14
+[17:01:16][C][ledc.output:166]:   LEDC Channel: 0
+[17:01:17][C][ledc.output:167]:   PWM Frequency: 1000.0 Hz
+[17:01:17][C][ledc.output:168]:   Bit depth: 16
+[17:01:17][C][ledc.output:164]: LEDC Output:
+[17:01:17][C][ledc.output:165]:   Pin GPIO12
+[17:01:17][C][ledc.output:166]:   LEDC Channel: 1
+[17:01:17][C][ledc.output:167]:   PWM Frequency: 1000.0 Hz
+[17:01:17][C][ledc.output:168]:   Bit depth: 16
+[17:01:17][C][ledc.output:164]: LEDC Output:
+[17:01:17][C][ledc.output:165]:   Pin GPIO13
+[17:01:17][C][ledc.output:166]:   LEDC Channel: 2
+[17:01:17][C][ledc.output:167]:   PWM Frequency: 1000.0 Hz
+[17:01:17][C][ledc.output:168]:   Bit depth: 16
+[17:01:17][C][template.sensor:022]: Template Sensor 'temp_sensor'
+[17:01:17][C][template.sensor:022]:   State Class: ''
+[17:01:17][C][template.sensor:022]:   Unit of Measurement: ''
+[17:01:17][C][template.sensor:022]:   Accuracy Decimals: 1
+[17:01:17][C][template.sensor:023]:   Update Interval: 60.0s
+[17:01:17][D][canbus:072]: received can message (#1) std can_id=0x703 size=1
+[17:01:17][C][light:103]: Light 'Activity light'
+[17:01:17][I][canopen:145]: received mqtt message on topic canbus/0/1795, len: 1, is_own: 1
+[17:01:17][C][light:103]: Light 'Motion light'
+[17:01:17][D][canbus:072]: received can message (#1) std can_id=0x702 size=1
+[17:01:17][C][light:103]: Light 'Temperature light'
+[17:01:17][C][light:105]:   Default Transition Length: 1.0s
+[17:01:17][C][light:106]:   Gamma Correct: 2.80
+[17:01:17][D][canbus:072]: received can message (#1) std can_id=0x701 size=1
+[17:01:17][I][canopen:145]: received mqtt message on topic canbus/0/1794, len: 1, is_own: 1
+[17:01:17][C][template.switch:068]: Template Switch 'activity_light_switch'
+[17:01:17][C][template.switch:091]:   Restore Mode: always OFF
+[17:01:17][C][template.switch:057]:   Optimistic: NO
+[17:01:17][D][canbus:035]: send standard id=0x700 rtr=FALSE size=1
+[17:01:17][I][canopen:145]: received mqtt message on topic canbus/0/1793, len: 1, is_own: 1
+[17:01:17][C][template.switch:068]: Template Switch 'motion_light_switch'
+[17:01:17][C][template.switch:091]:   Restore Mode: always OFF
+[17:01:17][C][template.switch:057]:   Optimistic: NO
+[17:01:17][I][canopen:145]: received mqtt message on topic canbus/0/1792, len: 1, is_own: 1
+[17:01:17][C][mdns:115]: mDNS:
+[17:01:17][C][mdns:116]:   Hostname: can-gateway
+[17:01:17][C][ota:097]: Over-The-Air Updates:
+[17:01:17][C][ota:098]:   Address: can-gateway.local:3232
+[17:01:17][C][ota:101]:   Using Password.
+[17:01:17][C][api:139]: API Server:
+[17:01:17][C][api:140]:   Address: can-gateway.local:6053
+[17:01:17][C][api:142]:   Using noise encryption: YES
+[17:01:17][C][mqtt:133]: MQTT:
+[17:01:17][C][mqtt:135]:   Server Address: homeassistant.local:1883 (192.168.1.132)
+[17:01:17][C][mqtt:136]:   Username: 'mqtt'
+[17:01:17][C][mqtt:137]:   Client ID: 'can-gateway-441793e6b808'
+[17:01:17][C][mqtt:139]:   Discovery prefix: 'homeassistant'
+[17:01:17][C][mqtt:140]:   Discovery retain: YES
+[17:01:17][C][mqtt:142]:   Topic Prefix: 'can-gateway'
+[17:01:17][C][mqtt:144]:   Log Topic: 'can-gateway/debug'
+[17:01:17][C][mqtt:147]:   Availability: 'can-gateway/status'
+[17:01:17][C][mqtt.sensor:028]: MQTT Sensor 'Bus Error Count':
+[17:01:17][C][mqtt.sensor:032]:   State Topic: 'can-gateway/sensor/bus_error_count/state'
+[17:01:17][C][mqtt.sensor:028]: MQTT Sensor 'Missed Node 1 Heartbeats':
+[17:01:17][C][mqtt.sensor:032]:   State Topic: 'can-gateway/sensor/missed_node_1_heartbeats/state'
+[17:01:17][C][mqtt.sensor:028]: MQTT Sensor 'Missed Node 2 Heartbeats':
+[17:01:17][C][mqtt.sensor:032]:   State Topic: 'can-gateway/sensor/missed_node_2_heartbeats/state'
+[17:01:17][D][canbus:072]: received can message (#1) std can_id=0x183 size=5
+[17:01:17][D][sensor:094]: 'temp_sensor': Sending state 25.87500  with 1 decimals of accuracy
+[17:01:17][C][mqtt.sensor:028]: MQTT Sensor 'Missed Node 3 Heartbeats':
+[17:01:17][C][mqtt.sensor:032]:   State Topic: 'can-gateway/sensor/missed_node_3_heartbeats/state'
+[17:01:17][D][sensor:094]: 'Missed Node 3 Heartbeats': Sending state 0.00000  with 0 decimals of accuracy
+[17:01:17][I][canopen:145]: received mqtt message on topic canbus/0/387, len: 5, is_own: 1
+[17:01:17][C][mqtt.text_sensor:023]: MQTT Text Sensor 'CANOpen Status':
+[17:01:17][C][mqtt.text_sensor:024]:   State Topic: 'can-gateway/sensor/canopen_status/state'
+[17:01:18][C][mqtt.light:078]: MQTT Light 'Temperature light':
+[17:01:18][C][mqtt.light:079]:   State Topic: 'can-gateway/light/temperature_light/state'
+[17:01:18][C][mqtt.light:079]:   Command Topic: 'can-gateway/light/temperature_light/command'
+[17:01:18][D][sensor:094]: 'Missed Node 2 Heartbeats': Sending state 0.00000  with 0 decimals of accuracy
+[17:01:18][D][canbus:072]: received can message (#1) std can_id=0x703 size=1
+[17:01:18][I][canopen:145]: received mqtt message on topic canbus/0/1795, len: 1, is_own: 1
+[17:01:18][D][canbus:072]: received can message (#1) std can_id=0x702 size=1
+[17:01:18][I][canopen:145]: received mqtt message on topic canbus/0/1794, len: 1, is_own: 1
+[17:01:18][D][canbus:072]: received can message (#1) std can_id=0x701 size=1
+[17:01:18][I][canopen:145]: received mqtt message on topic canbus/0/1793, len: 1, is_own: 1
+[17:01:19][D][canbus:072]: received can message (#1) std can_id=0x703 size=1
+[17:01:19][I][canopen:145]: received mqtt message on topic canbus/0/1795, len: 1, is_own: 1
+[17:01:19][D][canbus:072]: received can message (#1) std can_id=0x702 size=1
+[17:01:19][I][canopen:145]: received mqtt message on topic canbus/0/1794, len: 1, is_own: 1
+[17:01:19][D][canbus:072]: received can message (#1) std can_id=0x701 size=1
+[17:01:19][I][canopen:145]: received mqtt message on topic canbus/0/1793, len: 1, is_own: 1
+[17:01:19][D][canbus:072]: received can message (#1) std can_id=0x181 size=3
+[17:01:19][D][switch:012]: 'activity_light_switch' Turning ON.
+[17:01:19][D][light:036]: 'Activity light' Setting:
+[17:01:19][D][light:047]:   State: ON
+[17:01:19][D][canbus:072]: received can message (#2) std can_id=0x181 size=3
+[17:01:19][D][switch:012]: 'activity_light_switch' Turning ON.
+[17:01:19][D][light:036]: 'Activity light' Setting:
+[17:01:19][W][component:214]: Component canbus took a long time for an operation (0.07 s).
+[17:01:19][W][component:215]: Components should block for at most 20-30ms.
+[17:01:19][D][status_led:050]: 'Activity light': Setting state ON
+[17:01:19][I][canopen:145]: received mqtt message on topic canbus/0/385, len: 3, is_own: 1
+[17:01:19][I][canopen:145]: received mqtt message on topic canbus/0/385, len: 3, is_own: 1
+[17:01:19][D][canbus:072]: received can message (#1) std can_id=0x183 size=5
+[17:01:19][D][sensor:094]: 'temp_sensor': Sending state 25.81250  with 1 decimals of accuracy
+[17:01:19][I][canopen:145]: received mqtt message on topic canbus/0/387, len: 5, is_own: 1
+[17:01:20][D][canbus:072]: received can message (#1) std can_id=0x703 size=1
+[17:01:20][I][canopen:145]: received mqtt message on topic canbus/0/1795, len: 1, is_own: 1
+[17:01:20][D][canbus:072]: received can message (#1) std can_id=0x702 size=1
+[17:01:20][D][sensor:094]: 'Missed Node 1 Heartbeats': Sending state 0.00000  with 0 decimals of accuracy
+[17:01:20][D][canbus:072]: received can message (#1) std can_id=0x701 size=1
+[17:01:20][I][canopen:145]: received mqtt message on topic canbus/0/1794, len: 1, is_own: 1
+[17:01:20][I][canopen:145]: received mqtt message on topic canbus/0/1793, len: 1, is_own: 1
+[17:01:20][D][text_sensor:064]: 'CANOpen Status': Sending state 'RUNNING'
+[17:01:20][D][canbus:072]: received can message (#1) std can_id=0x183 size=5
+[17:01:20][D][sensor:094]: 'temp_sensor': Sending state 25.87500  with 1 decimals of accuracy
+[17:01:20][I][canopen:145]: received mqtt message on topic canbus/0/387, len: 5, is_own: 1
+[17:01:21][D][canbus:072]: received can message (#1) std can_id=0x703 size=1
+[17:01:21][D][canbus:072]: received can message (#1) std can_id=0x182 size=3
+[17:01:21][D][switch:012]: 'motion_light_switch' Turning ON.
+[17:01:21][D][light:036]: 'Motion light' Setting:
+[17:01:21][D][light:047]:   State: ON
+[17:01:21][D][canbus:072]: received can message (#2) std can_id=0x182 size=3
+[17:01:21][D][switch:012]: 'motion_light_switch' Turning ON.
+[17:01:21][D][light:036]: 'Motion light' Setting:
+[17:01:21][D][canbus:072]: received can message (#3) std can_id=0x702 size=1
+[17:01:21][W][component:214]: Component canbus took a long time for an operation (0.06 s).
+[17:01:21][W][component:215]: Components should block for at most 20-30ms.
+[17:01:21][D][status_led:050]: 'Motion light': Setting state ON
+[17:01:21][I][canopen:145]: received mqtt message on topic canbus/0/1795, len: 1, is_own: 1
+[17:01:21][D][canbus:072]: received can message (#1) std can_id=0x701 size=1
+[17:01:21][I][canopen:145]: received mqtt message on topic canbus/0/386, len: 3, is_own: 1
+[17:01:21][I][canopen:145]: received mqtt message on topic canbus/0/386, len: 3, is_own: 1
+[17:01:21][I][canopen:145]: received mqtt message on topic canbus/0/1794, len: 1, is_own: 1
+[17:01:21][I][canopen:145]: received mqtt message on topic canbus/0/1793, len: 1, is_own: 1
+[17:01:22][D][canbus:072]: received can message (#1) std can_id=0x703 size=1
+[17:01:22][I][canopen:145]: received mqtt message on topic canbus/0/1795, len: 1, is_own: 1
+[17:01:22][D][canbus:072]: received can message (#1) std can_id=0x702 size=1
+[17:01:22][I][canopen:145]: received mqtt message on topic canbus/0/1794, len: 1, is_own: 1
+[17:01:22][D][canbus:072]: received can message (#1) std can_id=0x701 size=1
+[17:01:22][I][canopen:145]: received mqtt message on topic canbus/0/1793, len: 1, is_own: 1
+[17:01:22][D][canbus:035]: send standard id=0x700 rtr=FALSE size=1
+[17:01:22][I][canopen:145]: received mqtt message on topic canbus/0/1792, len: 1, is_own: 1
+[17:01:23][D][canbus:072]: received can message (#1) std can_id=0x703 size=1
+[17:01:23][I][canopen:145]: received mqtt message on topic canbus/0/1795, len: 1, is_own: 1
+[17:01:23][D][canbus:072]: received can message (#1) std can_id=0x702 size=1
+[17:01:23][D][canbus:072]: received can message (#1) std can_id=0x701 size=1
+[17:01:23][I][canopen:145]: received mqtt message on topic canbus/0/1794, len: 1, is_own: 1
+[17:01:23][I][canopen:145]: received mqtt message on topic canbus/0/1793, len: 1, is_own: 1
+[17:01:24][D][canbus:072]: received can message (#1) std can_id=0x703 size=1
+[17:01:24][I][canopen:145]: received mqtt message on topic canbus/0/1795, len: 1, is_own: 1
+[17:01:24][D][canbus:072]: received can message (#1) std can_id=0x702 size=1
+[17:01:24][D][canbus:072]: received can message (#1) std can_id=0x701 size=1
+[17:01:24][I][canopen:145]: received mqtt message on topic canbus/0/1794, len: 1, is_own: 1
+[17:01:24][I][canopen:145]: received mqtt message on topic canbus/0/1793, len: 1, is_own: 1
+[17:01:24][D][canbus:072]: received can message (#1) std can_id=0x183 size=5
+[17:01:24][D][sensor:094]: 'temp_sensor': Sending state 25.81250  with 1 decimals of accuracy
+[17:01:24][I][canopen:145]: received mqtt message on topic canbus/0/387, len: 5, is_own: 1
+[17:01:25][D][canbus:072]: received can message (#1) std can_id=0x703 size=1
+[17:01:25][I][canopen:145]: received mqtt message on topic canbus/0/1795, len: 1, is_own: 1
+[17:01:25][D][canbus:072]: received can message (#1) std can_id=0x702 size=1
+[17:01:25][D][canbus:072]: received can message (#1) std can_id=0x701 size=1
+[17:01:25][D][canbus:072]: received can message (#2) std can_id=0x181 size=3
+[17:01:25][D][switch:012]: 'activity_light_switch' Turning ON.
+[17:01:25][D][light:036]: 'Activity light' Setting:
+[17:01:25][D][canbus:072]: received can message (#3) std can_id=0x181 size=3
+[17:01:25][D][switch:016]: 'activity_light_switch' Turning OFF.
+[17:01:25][D][light:036]: 'Activity light' Setting:
+[17:01:25][D][light:047]:   State: OFF
+[17:01:25][W][component:214]: Component canbus took a long time for an operation (0.07 s).
+[17:01:25][W][component:215]: Components should block for at most 20-30ms.
+[17:01:25][D][status_led:050]: 'Activity light': Setting state OFF
+[17:01:25][I][canopen:145]: received mqtt message on topic canbus/0/1794, len: 1, is_own: 1
+[17:01:25][I][canopen:145]: received mqtt message on topic canbus/0/1793, len: 1, is_own: 1
+[17:01:25][I][canopen:145]: received mqtt message on topic canbus/0/385, len: 3, is_own: 1
+[17:01:25][I][canopen:145]: received mqtt message on topic canbus/0/385, len: 3, is_own: 1
+[17:01:25][D][text_sensor:064]: 'CANOpen Status': Sending state 'RUNNING'
+[17:01:25][D][canbus:072]: received can message (#1) std can_id=0x183 size=5
+[17:01:25][D][sensor:094]: 'temp_sensor': Sending state 25.87500  with 1 decimals of accuracy
+[17:01:25][I][canopen:145]: received mqtt message on topic canbus/0/387, len: 5, is_own: 1
+[17:01:26][D][canbus:072]: received can message (#1) std can_id=0x703 size=1
+[17:01:26][I][canopen:145]: received mqtt message on topic canbus/0/1795, len: 1, is_own: 1
+[17:01:26][D][canbus:072]: received can message (#1) std can_id=0x702 size=1
+[17:01:26][D][canbus:072]: received can message (#1) std can_id=0x701 size=1
+[17:01:26][I][canopen:145]: received mqtt message on topic canbus/0/1794, len: 1, is_own: 1
+[17:01:26][I][canopen:145]: received mqtt message on topic canbus/0/1793, len: 1, is_own: 1
+[17:01:27][D][canbus:072]: received can message (#1) std can_id=0x702 size=1
+[17:01:27][I][canopen:145]: received mqtt message on topic canbus/0/1794, len: 1, is_own: 1
+[17:01:27][D][canbus:072]: received can message (#1) std can_id=0x701 size=1
+[17:01:27][I][canopen:145]: received mqtt message on topic canbus/0/1793, len: 1, is_own: 1
+[17:01:27][D][canbus:035]: send standard id=0x700 rtr=FALSE size=1
+[17:01:27][I][canopen:145]: received mqtt message on topic canbus/0/1792, len: 1, is_own: 1
+[17:01:27][D][canbus:072]: received can message (#1) std can_id=0x703 size=1
+[17:01:27][I][canopen:145]: received mqtt message on topic canbus/0/1795, len: 1, is_own: 1
+[17:01:27][D][sensor:094]: 'Missed Node 3 Heartbeats': Sending state 1.00000  with 0 decimals of accuracy
+[17:01:28][D][sensor:094]: 'Missed Node 2 Heartbeats': Sending state 0.00000  with 0 decimals of accuracy
+[17:01:28][D][canbus:072]: received can message (#1) std can_id=0x702 size=1
+[17:01:28][I][canopen:145]: received mqtt message on topic canbus/0/1794, len: 1, is_own: 1
+[17:01:28][D][canbus:072]: received can message (#1) std can_id=0x701 size=1
+[17:01:28][I][canopen:145]: received mqtt message on topic canbus/0/1793, len: 1, is_own: 1
+[17:01:28][D][canbus:072]: received can message (#1) std can_id=0x703 size=1
+[17:01:28][I][canopen:145]: received mqtt message on topic canbus/0/1795, len: 1, is_own: 1
+[17:01:29][D][canbus:072]: received can message (#1) std can_id=0x702 size=1
+[17:01:29][I][canopen:145]: received mqtt message on topic canbus/0/1794, len: 1, is_own: 1
+[17:01:29][D][canbus:072]: received can message (#1) std can_id=0x701 size=1
+[17:01:29][I][canopen:145]: received mqtt message on topic canbus/0/1793, len: 1, is_own: 1
+[17:01:29][D][canbus:072]: received can message (#1) std can_id=0x703 size=1
+[17:01:29][I][canopen:145]: received mqtt message on topic canbus/0/1795, len: 1, is_own: 1
+[17:01:30][D][sensor:094]: 'Missed Node 1 Heartbeats': Sending state 0.00000  with 0 decimals of accuracy
+[17:01:30][D][canbus:072]: received can message (#1) std can_id=0x702 size=1
+[17:01:30][I][canopen:145]: received mqtt message on topic canbus/0/1794, len: 1, is_own: 1
+[17:01:30][D][canbus:072]: received can message (#1) std can_id=0x701 size=1
+[17:01:30][I][canopen:145]: received mqtt message on topic canbus/0/1793, len: 1, is_own: 1
+[17:01:30][D][text_sensor:064]: 'CANOpen Status': Sending state 'RUNNING'
+[17:01:30][D][canbus:072]: received can message (#1) std can_id=0x703 size=1
+[17:01:31][I][canopen:145]: received mqtt message on topic canbus/0/1795, len: 1, is_own: 1
+[17:01:31][D][canbus:072]: received can message (#1) std can_id=0x183 size=5
+[17:01:31][D][sensor:094]: 'temp_sensor': Sending state 28.50000  with 1 decimals of accuracy
+[17:01:31][D][light:036]: 'Temperature light' Setting:
+[17:01:31][D][light:059]:   Red: 100%, Green: 0%, Blue: 0%
+[17:01:31][D][light:085]:   Transition length: 1.0s
+[17:01:31][W][component:214]: Component canbus took a long time for an operation (0.06 s).
+[17:01:31][W][component:215]: Components should block for at most 20-30ms.
+[17:01:31][I][canopen:145]: received mqtt message on topic canbus/0/387, len: 5, is_own: 1
+[17:01:31][D][canbus:072]: received can message (#1) std can_id=0x702 size=1
+[17:01:31][I][canopen:145]: received mqtt message on topic canbus/0/1794, len: 1, is_own: 1
+[17:01:31][D][canbus:072]: received can message (#1) std can_id=0x701 size=1
+[17:01:31][I][canopen:145]: received mqtt message on topic canbus/0/1793, len: 1, is_own: 1
+[17:01:31][D][canbus:072]: received can message (#1) std can_id=0x183 size=5
+[17:01:31][D][sensor:094]: 'temp_sensor': Sending state 28.12500  with 1 decimals of accuracy
+[17:01:31][I][canopen:145]: received mqtt message on topic canbus/0/387, len: 5, is_own: 1
+[17:01:32][D][canbus:072]: received can message (#1) std can_id=0x703 size=1
+[17:01:32][I][canopen:145]: received mqtt message on topic canbus/0/1795, len: 1, is_own: 1
+[17:01:32][D][canbus:072]: received can message (#1) std can_id=0x702 size=1
+[17:01:32][I][canopen:145]: received mqtt message on topic canbus/0/1794, len: 1, is_own: 1
+[17:01:32][D][canbus:072]: received can message (#1) std can_id=0x701 size=1
+[17:01:32][I][canopen:145]: received mqtt message on topic canbus/0/1793, len: 1, is_own: 1
+[17:01:32][D][canbus:035]: send standard id=0x700 rtr=FALSE size=1
+[17:01:32][I][canopen:145]: received mqtt message on topic canbus/0/1792, len: 1, is_own: 1
+[17:01:32][D][canbus:072]: received can message (#1) std can_id=0x183 size=5
+[17:01:32][D][sensor:094]: 'temp_sensor': Sending state 27.81250  with 1 decimals of accuracy
+[17:01:32][I][canopen:145]: received mqtt message on topic canbus/0/387, len: 5, is_own: 1
+[17:01:32][D][canbus:072]: received can message (#1) std can_id=0x703 size=1
+[17:01:33][I][canopen:145]: received mqtt message on topic canbus/0/1795, len: 1, is_own: 1
+[17:01:33][D][canbus:072]: received can message (#1) std can_id=0x702 size=1
+[17:01:33][I][canopen:145]: received mqtt message on topic canbus/0/1794, len: 1, is_own: 1
+[17:01:33][D][canbus:072]: received can message (#1) std can_id=0x701 size=1
+[17:01:33][I][canopen:145]: received mqtt message on topic canbus/0/1793, len: 1, is_own: 1
+[17:01:33][D][canbus:072]: received can message (#1) std can_id=0x183 size=5
+[17:01:33][D][sensor:094]: 'temp_sensor': Sending state 27.56250  with 1 decimals of accuracy
+[17:01:33][I][canopen:145]: received mqtt message on topic canbus/0/387, len: 5, is_own: 1
+[17:01:34][D][canbus:072]: received can message (#1) std can_id=0x703 size=1
+[17:01:34][I][canopen:145]: received mqtt message on topic canbus/0/1795, len: 1, is_own: 1
+[17:01:34][D][canbus:072]: received can message (#1) std can_id=0x702 size=1
+[17:01:34][I][canopen:145]: received mqtt message on topic canbus/0/1794, len: 1, is_own: 1
+[17:01:34][D][canbus:072]: received can message (#1) std can_id=0x701 size=1
+[17:01:34][I][canopen:145]: received mqtt message on topic canbus/0/1793, len: 1, is_own: 1
+[17:01:34][D][canbus:072]: received can message (#1) std can_id=0x183 size=5
+[17:01:34][D][sensor:094]: 'temp_sensor': Sending state 27.37500  with 1 decimals of accuracy
+[17:01:34][I][canopen:145]: received mqtt message on topic canbus/0/387, len: 5, is_own: 1
+[17:01:35][D][canbus:072]: received can message (#1) std can_id=0x703 size=1
+[17:01:35][I][canopen:145]: received mqtt message on topic canbus/0/1795, len: 1, is_own: 1
+[17:01:35][D][canbus:072]: received can message (#1) std can_id=0x702 size=1
+[17:01:35][I][canopen:145]: received mqtt message on topic canbus/0/1794, len: 1, is_own: 1
+[17:01:35][D][canbus:072]: received can message (#1) std can_id=0x701 size=1
+[17:01:35][I][canopen:145]: received mqtt message on topic canbus/0/1793, len: 1, is_own: 1
+[17:01:35][D][text_sensor:064]: 'CANOpen Status': Sending state 'RUNNING'
+[17:01:35][D][canbus:072]: received can message (#1) std can_id=0x183 size=5
+[17:01:35][D][sensor:094]: 'temp_sensor': Sending state 27.25000  with 1 decimals of accuracy
+[17:01:35][I][canopen:145]: received mqtt message on topic canbus/0/387, len: 5, is_own: 1
+[17:01:36][D][canbus:072]: received can message (#1) std can_id=0x703 size=1
+[17:01:36][I][canopen:145]: received mqtt message on topic canbus/0/1795, len: 1, is_own: 1
+[17:01:36][D][canbus:072]: received can message (#1) std can_id=0x702 size=1
+[17:01:36][I][canopen:145]: received mqtt message on topic canbus/0/1794, len: 1, is_own: 1
+[17:01:36][D][canbus:072]: received can message (#1) std can_id=0x701 size=1
+[17:01:36][I][canopen:145]: received mqtt message on topic canbus/0/1793, len: 1, is_own: 1
+[17:01:36][D][canbus:072]: received can message (#1) std can_id=0x183 size=5
+[17:01:36][D][sensor:094]: 'temp_sensor': Sending state 27.12500  with 1 decimals of accuracy
+[17:01:36][I][canopen:145]: received mqtt message on topic canbus/0/387, len: 5, is_own: 1
+[17:01:37][D][canbus:072]: received can message (#1) std can_id=0x703 size=1
+[17:01:37][I][canopen:145]: received mqtt message on topic canbus/0/1795, len: 1, is_own: 1
+[17:01:37][D][canbus:072]: received can message (#1) std can_id=0x182 size=3
+[17:01:37][D][switch:016]: 'motion_light_switch' Turning OFF.
+[17:01:37][D][light:036]: 'Motion light' Setting:
+[17:01:37][D][light:047]:   State: OFF
+[17:01:37][D][canbus:072]: received can message (#2) std can_id=0x182 size=3
+[17:01:37][D][switch:016]: 'motion_light_switch' Turning OFF.
+[17:01:37][D][light:036]: 'Motion light' Setting:
+[17:01:37][W][component:214]: Component canbus took a long time for an operation (0.07 s).
+[17:01:37][W][component:215]: Components should block for at most 20-30ms.
+[17:01:37][D][status_led:050]: 'Motion light': Setting state OFF
+[17:01:37][I][canopen:145]: received mqtt message on topic canbus/0/386, len: 3, is_own: 1
+[17:01:37][I][canopen:145]: received mqtt message on topic canbus/0/386, len: 3, is_own: 1
+[17:01:37][D][canbus:072]: received can message (#1) std can_id=0x702 size=1
+[17:01:37][I][canopen:145]: received mqtt message on topic canbus/0/1794, len: 1, is_own: 1
+[17:01:37][D][canbus:072]: received can message (#1) std can_id=0x701 size=1
+[17:01:37][I][canopen:145]: received mqtt message on topic canbus/0/1793, len: 1, is_own: 1
+[17:01:37][D][canbus:035]: send standard id=0x700 rtr=FALSE size=1
+[17:01:37][I][canopen:145]: received mqtt message on topic canbus/0/1792, len: 1, is_own: 1
+[17:01:37][D][canbus:072]: received can message (#1) std can_id=0x183 size=5
+[17:01:37][D][sensor:094]: 'temp_sensor': Sending state 27.00000  with 1 decimals of accuracy
+[17:01:37][D][light:036]: 'Temperature light' Setting:
+[17:01:37][D][light:059]:   Red: 0%, Green: 100%, Blue: 0%
+[17:01:37][D][light:085]:   Transition length: 1.0s
+[17:01:37][W][component:214]: Component canbus took a long time for an operation (0.05 s).
+[17:01:37][W][component:215]: Components should block for at most 20-30ms.
+[17:01:37][I][canopen:145]: received mqtt message on topic canbus/0/387, len: 5, is_own: 1
+[17:01:37][D][sensor:094]: 'Missed Node 3 Heartbeats': Sending state 3.00000  with 0 decimals of accuracy
+[17:01:38][D][canbus:072]: received can message (#1) std can_id=0x703 size=1
+[17:01:38][I][canopen:145]: received mqtt message on topic canbus/0/1795, len: 1, is_own: 1
+[17:01:38][D][sensor:094]: 'Missed Node 2 Heartbeats': Sending state 0.00000  with 0 decimals of accuracy
+[17:01:38][D][canbus:072]: received can message (#1) std can_id=0x702 size=1
+[17:01:38][I][canopen:145]: received mqtt message on topic canbus/0/1794, len: 1, is_own: 1
+[17:01:38][D][canbus:072]: received can message (#1) std can_id=0x701 size=1
+[17:01:38][I][canopen:145]: received mqtt message on topic canbus/0/1793, len: 1, is_own: 1
+[17:01:38][D][canbus:072]: received can message (#1) std can_id=0x183 size=5
+[17:01:38][D][sensor:094]: 'temp_sensor': Sending state 26.93750  with 1 decimals of accuracy
+[17:01:38][I][canopen:145]: received mqtt message on topic canbus/0/387, len: 5, is_own: 1
+[17:01:39][D][canbus:072]: received can message (#1) std can_id=0x703 size=1
+[17:01:39][I][canopen:145]: received mqtt message on topic canbus/0/1795, len: 1, is_own: 1
+[17:01:39][D][canbus:072]: received can message (#1) std can_id=0x702 size=1
+[17:01:39][I][canopen:145]: received mqtt message on topic canbus/0/1794, len: 1, is_own: 1
+[17:01:39][D][canbus:072]: received can message (#1) std can_id=0x701 size=1
+[17:01:39][I][canopen:145]: received mqtt message on topic canbus/0/1793, len: 1, is_own: 1
+[17:01:39][D][canbus:072]: received can message (#1) std can_id=0x183 size=5
+[17:01:39][D][sensor:094]: 'temp_sensor': Sending state 26.81250  with 1 decimals of accuracy
+[17:01:39][I][canopen:145]: received mqtt message on topic canbus/0/387, len: 5, is_own: 1
+[17:01:40][D][canbus:072]: received can message (#1) std can_id=0x703 size=1
+[17:01:40][I][canopen:145]: received mqtt message on topic canbus/0/1795, len: 1, is_own: 1
+[17:01:40][D][sensor:094]: 'Missed Node 1 Heartbeats': Sending state 0.00000  with 0 decimals of accuracy
+[17:01:40][D][canbus:072]: received can message (#1) std can_id=0x702 size=1
+[17:01:40][I][canopen:145]: received mqtt message on topic canbus/0/1794, len: 1, is_own: 1
+[17:01:40][D][canbus:072]: received can message (#1) std can_id=0x701 size=1
+[17:01:40][I][canopen:145]: received mqtt message on topic canbus/0/1793, len: 1, is_own: 1
+[17:01:40][D][text_sensor:064]: 'CANOpen Status': Sending state 'RUNNING'
+[17:01:41][D][canbus:072]: received can message (#1) std can_id=0x703 size=1
+[17:01:41][I][canopen:145]: received mqtt message on topic canbus/0/1795, len: 1, is_own: 1
+[17:01:41][D][canbus:072]: received can message (#1) std can_id=0x702 size=1
+[17:01:41][I][canopen:145]: received mqtt message on topic canbus/0/1794, len: 1, is_own: 1
+[17:01:41][D][canbus:072]: received can message (#1) std can_id=0x701 size=1
+[17:01:41][I][canopen:145]: received mqtt message on topic canbus/0/1793, len: 1, is_own: 1
+[17:01:41][D][canbus:072]: received can message (#1) std can_id=0x183 size=5
+[17:01:41][D][sensor:094]: 'temp_sensor': Sending state 26.75000  with 1 decimals of accuracy
+[17:01:41][I][canopen:145]: received mqtt message on topic canbus/0/387, len: 5, is_own: 1
+[17:01:42][D][canbus:072]: received can message (#1) std can_id=0x703 size=1
+[17:01:42][I][canopen:145]: received mqtt message on topic canbus/0/1795, len: 1, is_own: 1
+[17:01:42][D][canbus:072]: received can message (#1) std can_id=0x702 size=1
+[17:01:42][I][canopen:145]: received mqtt message on topic canbus/0/1794, len: 1, is_own: 1
+[17:01:42][D][canbus:072]: received can message (#1) std can_id=0x701 size=1
+[17:01:42][I][canopen:145]: received mqtt message on topic canbus/0/1793, len: 1, is_own: 1
+[17:01:42][D][canbus:035]: send standard id=0x700 rtr=FALSE size=1
+[17:01:42][D][canbus:072]: received can message (#1) std can_id=0x183 size=5
+[17:01:42][D][sensor:094]: 'temp_sensor': Sending state 26.62500  with 1 decimals of accuracy
+[17:01:42][I][canopen:145]: received mqtt message on topic canbus/0/1792, len: 1, is_own: 1
+[17:01:42][I][canopen:145]: received mqtt message on topic canbus/0/387, len: 5, is_own: 1
+[17:01:43][D][canbus:072]: received can message (#1) std can_id=0x703 size=1

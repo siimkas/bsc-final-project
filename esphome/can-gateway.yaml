@@ -43,7 +43,7 @@ canbus:
     rx_pin: GPIO18
     tx_pin: GPIO19
     can_id: 0
-    bit_rate: 125kbps
+    bit_rate: 500kbps
 
 canopen:
   id: can_gate
@@ -58,7 +58,24 @@ canopen:
     - node_id: 3
       timeout: 1s
   entities:
-
+    - id: temp_sensor
+      index: 1
+      rpdo: 
+        - node_id: 3
+          tpdo: 0
+          offset: 1
+    - id: motion_light_switch
+      index: 2
+      rpdo:
+      - node_id: 2
+        tpdo: 0
+        offset: 2
+    - id: activity_light_switch
+      index: 3
+      rpdo:
+      - node_id: 1
+        tpdo: 0
+        offset: 2
 
 sensor:
 
@@ -88,6 +105,38 @@ sensor:
     lambda: return id(can_gate).get_heartbeat_events(3);
     accuracy_decimals: 0
     update_interval: 10s
+
+  - platform: template
+    name: temp_sensor
+    internal: True
+    id: temp_sensor
+    on_value_range:
+      - below: 26.0
+        then:
+          - light.control:
+              id: rgb_light
+              state: on
+              red: 0%
+              green: 0%
+              blue: 100%
+      - above: 26.0
+        below: 27.0
+        then:
+          - light.control:
+              id: rgb_light
+              state: on
+              red: 0%
+              green: 100%
+              blue: 0%
+      - above: 27.00
+        then:
+          - light.control:
+              id: rgb_light
+              state: on
+              red: 100%
+              green: 0%
+              blue: 0%
+
     
 text_sensor:
   - platform: template
@@ -125,3 +174,60 @@ text_sensor:
                 level: WARN
                 format: "starting"
             - lambda: id(can_gate).start();  
+
+light:
+
+  - platform: status_led
+    name: "Activity light"
+    id: activity_light
+    pin: GPIO15
+    internal: true
+
+  - platform: status_led
+    name: "Motion light"
+    id: motion_light
+    pin: GPIO2
+    internal: true
+
+  - platform: rgb
+    name: "Temperature light"
+    id: rgb_light
+    red: red_light
+    green: green_light
+    blue: blue_light
+
+output: 
+  - platform: ledc
+    id: red_light
+    pin: GPIO14
+    frequency: 1000Hz
+
+  - platform: ledc
+    id: green_light
+    pin: GPIO12
+    frequency: 1000Hz
+
+  - platform: ledc
+    id: blue_light
+    pin: GPIO13
+    frequency: 1000Hz
+
+switch:
+  - platform: template
+    name: activity_light_switch
+    id: activity_light_switch
+    turn_on_action:
+      - light.turn_on: activity_light
+    turn_off_action:
+      - light.turn_off: activity_light
+    internal: true
+
+  - platform: template
+    name: motion_light_switch
+    id: motion_light_switch
+    turn_on_action:
+      - light.turn_on: motion_light
+    turn_off_action:
+    - light.turn_off: motion_light
+    internal: true
+

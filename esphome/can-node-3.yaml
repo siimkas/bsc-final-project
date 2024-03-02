@@ -40,7 +40,7 @@ canbus:
     rx_pin: GPIO16
     tx_pin: GPIO17
     can_id: 0
-    bit_rate: 125kbps
+    bit_rate: 500kbps
     
 canopen:
   id: can_gate

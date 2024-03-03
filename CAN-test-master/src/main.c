@@ -16,14 +16,14 @@
 /* --------------------- Definitions and static variables ------------------ */
 //Example Configuration
 #define PING_PERIOD_MS          250
-#define NO_OF_DATA_MSGS         50
+#define NO_OF_DATA_MSGS         500
 #define NO_OF_ITERS             3
 #define ITER_DELAY_MS           1000
 #define RX_TASK_PRIO            8
 #define TX_TASK_PRIO            9
 #define CTRL_TSK_PRIO           10
-#define TX_GPIO_NUM             22
-#define RX_GPIO_NUM             21
+#define TX_GPIO_NUM             17
+#define RX_GPIO_NUM             16
 #define EXAMPLE_TAG             "TWAI Master"
 
 #define ID_MASTER_STOP_CMD      0x0A0
@@ -47,7 +47,9 @@ typedef enum {
     RX_TASK_EXIT,
 } rx_task_action_t;
 
-
+static const twai_timing_config_t t_config_50kbit = TWAI_TIMING_CONFIG_50KBITS();
+static const twai_timing_config_t t_config_125kbit = TWAI_TIMING_CONFIG_125KBITS();
+static const twai_timing_config_t t_config_250kbit = TWAI_TIMING_CONFIG_250KBITS();
 static const twai_timing_config_t t_config_500kbit = TWAI_TIMING_CONFIG_500KBITS();
 static const twai_timing_config_t t_config_800kbit = TWAI_TIMING_CONFIG_800KBITS();
 static const twai_timing_config_t t_config_1mbit = TWAI_TIMING_CONFIG_1MBITS();
@@ -204,7 +206,7 @@ static void twai_control_task(void *arg)
 void app_main(void)
 {
     int64_t time_us;
-    for (int i = 0; i < 3; i++){
+    for (int i = 0; i < 7; i++){
     
         //Create tasks, queues, and semaphores
         rx_task_queue = xQueueCreate(1, sizeof(rx_task_action_t));
@@ -220,16 +222,28 @@ void app_main(void)
         switch (i)
         {
         case 0:
-            ESP_ERROR_CHECK(twai_driver_install(&g_config, &t_config_500kbit, &f_config));
-            ESP_LOGI(EXAMPLE_TAG, "Driver installed");            
+            ESP_ERROR_CHECK(twai_driver_install(&g_config, &t_config_50kbit, &f_config));
+            ESP_LOGI(EXAMPLE_TAG, "Results for 50kbit");            
             break;
         case 1:
-            ESP_ERROR_CHECK(twai_driver_install(&g_config, &t_config_800kbit, &f_config));
-            ESP_LOGI(EXAMPLE_TAG, "Driver installed");            
-            break;
+            ESP_ERROR_CHECK(twai_driver_install(&g_config, &t_config_125kbit, &f_config));
+            ESP_LOGI(EXAMPLE_TAG, "Results for 125kbit");            
+            break;    
         case 2:
+            ESP_ERROR_CHECK(twai_driver_install(&g_config, &t_config_250kbit, &f_config));
+            ESP_LOGI(EXAMPLE_TAG, "Results for 250kbit");            
+            break;
+        case 3:
+            ESP_ERROR_CHECK(twai_driver_install(&g_config, &t_config_500kbit, &f_config));
+            ESP_LOGI(EXAMPLE_TAG, "Results for 500kbit");            
+            break;
+        case 4:
+            ESP_ERROR_CHECK(twai_driver_install(&g_config, &t_config_800kbit, &f_config));
+            ESP_LOGI(EXAMPLE_TAG, "Results for 800kbit");            
+            break;
+        case 5:
             ESP_ERROR_CHECK(twai_driver_install(&g_config, &t_config_1mbit, &f_config));
-            ESP_LOGI(EXAMPLE_TAG, "Driver installed");            
+            ESP_LOGI(EXAMPLE_TAG, "Results for 1mbit");            
             break;
         }
         time_us = esp_timer_get_time();

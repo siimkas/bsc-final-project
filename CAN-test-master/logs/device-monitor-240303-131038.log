@@ -1,0 +1,343 @@
+0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+
+configsip: 0, SPIWP:0xee
+
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+
+mode:DIO, clock div:2
+
+load:0x3fff0030,len:7076
+
+load:0x40078000,len:15584
+
+ho 0 tail 12 room 4
+
+load:0x40080400,len:4
+
+load:0x40080404,len:3876
+
+entry 0x4008064c
+
+[0;32mI (31) boot: ESP-IDF 5.1.2 2nd stage bootloader[0m
+
+[0;32mI (31) boot: compile time Mar  3 2024 10:54:13[0m
+
+[0;32mI (31) boot: Multicore bootloader[0m
+
+[0;32mI (35) boot: chip revision: v3.0[0m
+
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+
+[0;32mI (58) boot: Partition Table:[0m
+
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+
+[0;32mI (92) boot: End of partition table[0m
+
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a414h ( 42004) map[0m
+
+[0;32mI (119) esp_image: segment 1: paddr=0001a43c vaddr=3ffb0000 size=02144h (  8516) load[0m
+
+[0;32mI (123) esp_image: segment 2: paddr=0001c588 vaddr=40080000 size=03a90h ( 14992) load[0m
+
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16664h ( 91748) map[0m
+
+[0;32mI (167) esp_image: segment 4: paddr=0003668c vaddr=40083a90 size=089d8h ( 35288) load[0m
+
+[0;32mI (188) boot: Loaded app from partition at offset 0x10000[0m
+
+[0;32mI (188) boot: Disabling RNG early entropy source...[0m
+
+[0;32mI (199) cpu_start: Multicore app[0m
+
+[0;32mI (200) cpu_start: Pro cpu up.[0m
+
+[0;32mI (200) cpu_start: Starting app cpu, entry point is 0x40081644[0m
+
+[0;32mI (0) cpu_start: App cpu up.[0m
+
+[0;32mI (218) cpu_start: Pro cpu start user code[0m
+
+[0;32mI (218) cpu_start: cpu freq: 160000000 Hz[0m
+
+[0;32mI (218) cpu_start: Application information:[0m
+
+[0;32mI (223) cpu_start: Project name:     CAN-test-master[0m
+
+[0;32mI (228) cpu_start: App version:      09a3b4f-dirty[0m
+
+[0;32mI (234) cpu_start: Compile time:     Mar  3 2024 10:53:41[0m
+
+[0;32mI (240) cpu_start: ELF file SHA256:  831f2532b0a8767b...[0m
+
+[0;32mI (246) cpu_start: ESP-IDF:          5.1.2[0m
+
+[0;32mI (251) cpu_start: Min chip rev:     v0.0[0m
+
+[0;32mI (255) cpu_start: Max chip rev:     v3.99 [0m
+
+[0;32mI (260) cpu_start: Chip rev:         v3.0[0m
+
+[0;32mI (265) heap_init: Initializing. RAM available for dynamic allocation:[0m
+
+[0;32mI (272) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+
+[0;32mI (278) heap_init: At 3FFB2A08 len 0002D5F8 (181 KiB): DRAM[0m
+
+[0;32mI (284) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+
+[0;32mI (291) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+
+[0;32mI (297) heap_init: At 4008C468 len 00013B98 (78 KiB): IRAM[0m
+
+[0;32mI (305) spi_flash: detected chip: generic[0m
+
+[0;32mI (308) spi_flash: flash io: dio[0m
+
+[0;32mI (312) app_start: Starting scheduler on CPU0[0m
+
+[0;32mI (317) app_start: Starting scheduler on CPU1[0m
+
+[0;32mI (317) main_task: Started on CPU0[0m
+
+[0;32mI (327) main_task: Calling app_main()[0m
+
+[0;32mI (327) gpio: GPIO[16]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+
+[0;32mI (337) gpio: GPIO[17]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+
+[0;32mI (347) TWAI Master: Results for 50kbit[0m
+
+[0;32mI (347) TWAI Master: Driver started[0m
+
+[0;32mI (357) TWAI Master: Listening for ping response[0m
+
+[0;32mI (25597) TWAI Master: Driver stopped[0m
+
+[0;32mI (26597) TWAI Master: Driver started[0m
+
+[0;32mI (26597) TWAI Master: Listening for ping response[0m
+
+[0;32mI (52087) TWAI Master: Driver stopped[0m
+
+[0;32mI (53087) TWAI Master: Driver started[0m
+
+[0;32mI (53087) TWAI Master: Listening for ping response[0m
+
+[0;32mI (78577) TWAI Master: Driver stopped[0m
+
+[0;32mI (79577) TWAI Master: Time elapsed: 79223507 us[0m
+
+[0;32mI (79577) TWAI Master: Rx missed: 0[0m
+
+[0;32mI (79577) TWAI Master: Rx overrun: 0[0m
+
+[0;32mI (79577) TWAI Master: Tx failed: 2[0m
+
+[0;32mI (79577) TWAI Master: Bus errors: 2[0m
+
+[0;32mI (79587) TWAI Master: Arbitration lost: 0[0m
+
+[0;32mI (79587) TWAI Master: Driver uninstalled[0m
+
+[0;32mI (79597) gpio: GPIO[16]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+
+[0;32mI (79607) gpio: GPIO[17]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+
+[0;32mI (79607) TWAI Master: Results for 125kbit[0m
+
+[0;32mI (79617) TWAI Master: Driver started[0m
+
+[0;32mI (79617) TWAI Master: Listening for ping response[0m
+
+[0;32mI (108107) TWAI Master: Driver stopped[0m
+
+[0;32mI (109107) TWAI Master: Driver started[0m
+
+[0;32mI (109107) TWAI Master: Listening for ping response[0m
+
+[0;32mI (134597) TWAI Master: Driver stopped[0m
+
+[0;32mI (135597) TWAI Master: Driver started[0m
+
+[0;32mI (135597) TWAI Master: Listening for ping response[0m
+
+[0;32mI (161087) TWAI Master: Driver stopped[0m
+
+[0;32mI (162087) TWAI Master: Time elapsed: 82465688 us[0m
+
+[0;32mI (162087) TWAI Master: Rx missed: 0[0m
+
+[0;32mI (162087) TWAI Master: Rx overrun: 0[0m
+
+[0;32mI (162087) TWAI Master: Tx failed: 15[0m
+
+[0;32mI (162087) TWAI Master: Bus errors: 16[0m
+
+[0;32mI (162097) TWAI Master: Arbitration lost: 0[0m
+
+[0;32mI (162097) TWAI Master: Driver uninstalled[0m
+
+[0;32mI (162107) gpio: GPIO[16]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+
+[0;32mI (162117) gpio: GPIO[17]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+
+[0;32mI (162127) TWAI Master: Results for 250kbit[0m
+
+[0;32mI (162127) TWAI Master: Driver started[0m
+
+[0;32mI (162127) TWAI Master: Listening for ping response[0m
+
+[0;32mI (190617) TWAI Master: Driver stopped[0m
+
+[0;32mI (191617) TWAI Master: Driver started[0m
+
+[0;32mI (191617) TWAI Master: Listening for ping response[0m
+
+[0;32mI (217107) TWAI Master: Driver stopped[0m
+
+[0;32mI (218107) TWAI Master: Driver started[0m
+
+[0;32mI (218107) TWAI Master: Listening for ping response[0m
+
+[0;32mI (243597) TWAI Master: Driver stopped[0m
+
+[0;32mI (244597) TWAI Master: Time elapsed: 82464690 us[0m
+
+[0;32mI (244597) TWAI Master: Rx missed: 0[0m
+
+[0;32mI (244597) TWAI Master: Rx overrun: 0[0m
+
+[0;32mI (244597) TWAI Master: Tx failed: 15[0m
+
+[0;32mI (244597) TWAI Master: Bus errors: 16[0m
+
+[0;32mI (244607) TWAI Master: Arbitration lost: 0[0m
+
+[0;32mI (244607) TWAI Master: Driver uninstalled[0m
+
+[0;32mI (244617) gpio: GPIO[16]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+
+[0;32mI (244627) gpio: GPIO[17]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+
+[0;32mI (244637) TWAI Master: Results for 500kbit[0m
+
+[0;32mI (244637) TWAI Master: Driver started[0m
+
+[0;32mI (244637) TWAI Master: Listening for ping response[0m
+
+[0;32mI (273127) TWAI Master: Driver stopped[0m
+
+[0;32mI (274127) TWAI Master: Driver started[0m
+
+[0;32mI (274127) TWAI Master: Listening for ping response[0m
+
+[0;32mI (299617) TWAI Master: Driver stopped[0m
+
+[0;32mI (300617) TWAI Master: Driver started[0m
+
+[0;32mI (300617) TWAI Master: Listening for ping response[0m
+
+[0;32mI (326107) TWAI Master: Driver stopped[0m
+
+[0;32mI (327107) TWAI Master: Time elapsed: 82464686 us[0m
+
+[0;32mI (327107) TWAI Master: Rx missed: 0[0m
+
+[0;32mI (327107) TWAI Master: Rx overrun: 0[0m
+
+[0;32mI (327107) TWAI Master: Tx failed: 15[0m
+
+[0;32mI (327107) TWAI Master: Bus errors: 16[0m
+
+[0;32mI (327117) TWAI Master: Arbitration lost: 0[0m
+
+[0;32mI (327117) TWAI Master: Driver uninstalled[0m
+
+[0;32mI (327127) gpio: GPIO[16]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+
+[0;32mI (327137) gpio: GPIO[17]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+
+[0;32mI (327147) TWAI Master: Results for 800kbit[0m
+
+[0;32mI (327147) TWAI Master: Driver started[0m
+
+[0;32mI (327147) TWAI Master: Listening for ping response[0m
+
+[0;32mI (355387) TWAI Master: Driver stopped[0m
+
+[0;32mI (356387) TWAI Master: Driver started[0m
+
+[0;32mI (356387) TWAI Master: Listening for ping response[0m
+
+[0;32mI (381877) TWAI Master: Driver stopped[0m
+
+[0;32mI (382877) TWAI Master: Driver started[0m
+
+[0;32mI (382877) TWAI Master: Listening for ping response[0m
+
+[0;32mI (408367) TWAI Master: Driver stopped[0m
+
+[0;32mI (409367) TWAI Master: Time elapsed: 82214690 us[0m
+
+[0;32mI (409367) TWAI Master: Rx missed: 0[0m
+
+[0;32mI (409367) TWAI Master: Rx overrun: 0[0m
+
+[0;32mI (409367) TWAI Master: Tx failed: 14[0m
+
+[0;32mI (409367) TWAI Master: Bus errors: 15[0m
+
+[0;32mI (409377) TWAI Master: Arbitration lost: 0[0m
+
+[0;32mI (409377) TWAI Master: Driver uninstalled[0m
+
+[0;32mI (409387) gpio: GPIO[16]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+
+[0;32mI (409397) gpio: GPIO[17]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+
+[0;32mI (409407) TWAI Master: Results for 1mbit[0m
+
+[0;32mI (409407) TWAI Master: Driver started[0m
+
+[0;32mI (409407) TWAI Master: Listening for ping response[0m
+
+[0;32mI (437897) TWAI Master: Driver stopped[0m
+
+[0;32mI (438897) TWAI Master: Driver started[0m
+
+[0;32mI (438897) TWAI Master: Listening for ping response[0m
+
+[0;32mI (464387) TWAI Master: Driver stopped[0m
+
+[0;32mI (465387) TWAI Master: Driver started[0m
+
+[0;32mI (465387) TWAI Master: Listening for ping response[0m
+
+[0;32mI (490877) TWAI Master: Driver stopped[0m
+
+[0;32mI (491877) TWAI Master: Time elapsed: 82464860 us[0m
+
+[0;32mI (491877) TWAI Master: Rx missed: 0[0m
+
+[0;32mI (491877) TWAI Master: Rx overrun: 0[0m
+
+[0;32mI (491877) TWAI Master: Tx failed: 15[0m
+
+[0;32mI (491877) TWAI Master: Bus errors: 16[0m
+
+[0;32mI (491887) TWAI Master: Arbitration lost: 0[0m
+
+[0;32mI (491887) TWAI Master: Driver uninstalled[0m

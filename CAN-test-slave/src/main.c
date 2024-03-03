@@ -20,8 +20,8 @@
 #define RX_TASK_PRIO                    8       //Receiving task priority
 #define TX_TASK_PRIO                    9       //Sending task priority
 #define CTRL_TSK_PRIO                   10      //Control task priority
-#define TX_GPIO_NUM                     22
-#define RX_GPIO_NUM                     21
+#define TX_GPIO_NUM                     19
+#define RX_GPIO_NUM                     18
 #define EXAMPLE_TAG                     "TWAI Slave"
 
 #define ID_MASTER_STOP_CMD              0x0A0
@@ -46,6 +46,9 @@ typedef enum {
 } rx_task_action_t;
 
 static const twai_general_config_t g_config = TWAI_GENERAL_CONFIG_DEFAULT(TX_GPIO_NUM, RX_GPIO_NUM, TWAI_MODE_NORMAL);
+static const twai_timing_config_t t_config_50kbit = TWAI_TIMING_CONFIG_50KBITS();
+static const twai_timing_config_t t_config_125kbit = TWAI_TIMING_CONFIG_125KBITS();
+static const twai_timing_config_t t_config_250kbit = TWAI_TIMING_CONFIG_250KBITS();
 static const twai_timing_config_t t_config_500kbit = TWAI_TIMING_CONFIG_500KBITS();
 static const twai_timing_config_t t_config_800kbit = TWAI_TIMING_CONFIG_800KBITS();
 static const twai_timing_config_t t_config_1mbit = TWAI_TIMING_CONFIG_1MBITS();
@@ -220,7 +223,7 @@ static void twai_control_task(void *arg)
 void app_main(void)
 {
     int64_t time_us;
-    for (int i = 0; i < 3; i++){
+    for (int i = 0; i < 6; i++){
         
         //Add short delay to allow master it to initialize first
         for (int i = 3; i > 0; i--) {
@@ -242,14 +245,26 @@ void app_main(void)
         switch (i)
         {
         case 0:
-            ESP_ERROR_CHECK(twai_driver_install(&g_config, &t_config_500kbit, &f_config));
+            ESP_ERROR_CHECK(twai_driver_install(&g_config, &t_config_50kbit, &f_config));
             ESP_LOGI(EXAMPLE_TAG, "Driver installed");            
             break;
         case 1:
+            ESP_ERROR_CHECK(twai_driver_install(&g_config, &t_config_125kbit, &f_config));
+            ESP_LOGI(EXAMPLE_TAG, "Driver installed");            
+            break;    
+        case 2:
+            ESP_ERROR_CHECK(twai_driver_install(&g_config, &t_config_250kbit, &f_config));
+            ESP_LOGI(EXAMPLE_TAG, "Driver installed");            
+            break;
+        case 3:
+            ESP_ERROR_CHECK(twai_driver_install(&g_config, &t_config_500kbit, &f_config));
+            ESP_LOGI(EXAMPLE_TAG, "Driver installed");            
+            break;
+        case 4:
             ESP_ERROR_CHECK(twai_driver_install(&g_config, &t_config_800kbit, &f_config));
             ESP_LOGI(EXAMPLE_TAG, "Driver installed");            
             break;
-        case 2:
+        case 5:
             ESP_ERROR_CHECK(twai_driver_install(&g_config, &t_config_1mbit, &f_config));
             ESP_LOGI(EXAMPLE_TAG, "Driver installed");            
             break;

@@ -1,0 +1,404 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7076
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF 5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  9 2024 19:41:18[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a444h ( 42052) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001a46c vaddr=3ffb0000 size=02144h (  8516) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001c5b8 vaddr=40080000 size=03a60h ( 14944) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1623ch ( 90684) map[0m
+[0;32mI (166) esp_image: segment 4: paddr=00036264 vaddr=40083a60 size=089d0h ( 35280) load[0m
+[0;32mI (188) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (188) boot: Disabling RNG early entropy source...[0m
+[0;32mI (199) cpu_start: Multicore app[0m
+[0;32mI (199) cpu_start: Pro cpu up.[0m
+[0;32mI (200) cpu_start: Starting app cpu, entry point is 0x40081638[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (217) cpu_start: Pro cpu start user code[0m
+[0;32mI (217) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (218) cpu_start: Application information:[0m
+[0;32mI (222) cpu_start: Project name:     CAN-test-listen2[0m
+[0;32mI (228) cpu_start: App version:      1[0m
+[0;32mI (232) cpu_start: Compile time:     Apr  9 2024 19:40:44[0m
+[0;32mI (238) cpu_start: ELF file SHA256:  63362c9c9a510745...[0m
+[0;32mI (244) cpu_start: ESP-IDF:          5.1.2[0m
+[0;32mI (249) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (254) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (259) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (264) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (271) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (277) heap_init: At 3FFB29F8 len 0002D608 (181 KiB): DRAM[0m
+[0;32mI (283) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (289) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (296) heap_init: At 4008C430 len 00013BD0 (78 KiB): IRAM[0m
+[0;32mI (303) spi_flash: detected chip: generic[0m
+[0;32mI (307) spi_flash: flash io: dio[0m
+[0;32mI (311) app_start: Starting scheduler on CPU0[0m
+[0;32mI (316) app_start: Starting scheduler on CPU1[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+[0;32mI (326) gpio: GPIO[21]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (336) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (346) TWAI Listen Only: Results for 50kbit[0m
+[0;31mE (346) TWAI: Alert 4096[0m
+[0;32mI (356) TWAI Listen Only: Driver started[0m
+[0;32mI (6076) TWAI Listen Only: Received master ping[0m
+[0;32mI (6086) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (6326) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (6326) TWAI Listen Only: Received master start command[0m
+[0;32mI (10756) TWAI Listen Only: Received master stop command[0m
+[0;32mI (10776) TWAI Listen Only: Received slave stop response[0m
+[0;32mI (10776) TWAI Listen Only: #################################[0m
+[0;32mI (10776) TWAI Listen Only: Nr of data messages: 2508[0m
+[0;32mI (10776) TWAI Listen Only: Rx missed: 0[0m
+[0;32mI (10786) TWAI Listen Only: Rx overrun: 0[0m
+[0;32mI (10786) TWAI Listen Only: Bus errors: 15[0m
+[0;32mI (10796) TWAI Listen Only: #################################[0m
+[0;32mI (12046) TWAI Listen Only: Received master ping[0m
+[0;32mI (12056) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (12296) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (12296) TWAI Listen Only: Received master start command[0m
+[0;32mI (16736) TWAI Listen Only: Received master stop command[0m
+[0;32mI (16756) TWAI Listen Only: Received slave stop response[0m
+[0;32mI (16756) TWAI Listen Only: #################################[0m
+[0;32mI (16756) TWAI Listen Only: Nr of data messages: 2508[0m
+[0;32mI (16756) TWAI Listen Only: Rx missed: 0[0m
+[0;32mI (16766) TWAI Listen Only: Rx overrun: 0[0m
+[0;32mI (16766) TWAI Listen Only: Bus errors: 16[0m
+[0;32mI (16776) TWAI Listen Only: #################################[0m
+[0;32mI (18026) TWAI Listen Only: Received master ping[0m
+[0;32mI (18036) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (18276) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (18276) TWAI Listen Only: Received master start command[0m
+[0;32mI (22716) TWAI Listen Only: Received master stop command[0m
+[0;32mI (22726) TWAI Listen Only: Received slave stop response[0m
+[0;32mI (22726) TWAI Listen Only: #################################[0m
+[0;32mI (22726) TWAI Listen Only: Nr of data messages: 2508[0m
+[0;32mI (22736) TWAI Listen Only: Rx missed: 0[0m
+[0;32mI (22736) TWAI Listen Only: Rx overrun: 0[0m
+[0;32mI (22746) TWAI Listen Only: Bus errors: 17[0m
+[0;32mI (22746) TWAI Listen Only: #################################[0m
+[0;32mI (23996) TWAI Listen Only: Received master ping[0m
+[0;32mI (24006) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (24246) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (24246) TWAI Listen Only: Received master start command[0m
+[0;32mI (28656) TWAI Listen Only: Received master stop command[0m
+[0;32mI (28676) TWAI Listen Only: Received slave stop response[0m
+[0;32mI (28676) TWAI Listen Only: #################################[0m
+[0;32mI (28676) TWAI Listen Only: Nr of data messages: 2508[0m
+[0;32mI (28676) TWAI Listen Only: Rx missed: 0[0m
+[0;32mI (28686) TWAI Listen Only: Rx overrun: 0[0m
+[0;32mI (28686) TWAI Listen Only: Bus errors: 18[0m
+[0;32mI (28696) TWAI Listen Only: #################################[0m
+[0;32mI (29946) TWAI Listen Only: Received master ping[0m
+[0;32mI (29956) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (30196) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (30196) TWAI Listen Only: Received master start command[0m
+[0;32mI (34606) TWAI Listen Only: Received master stop command[0m
+[0;32mI (34616) TWAI Listen Only: Received slave stop response[0m
+[0;32mI (34616) TWAI Listen Only: #################################[0m
+[0;32mI (34626) TWAI Listen Only: Nr of data messages: 2508[0m
+[0;32mI (34626) TWAI Listen Only: Rx missed: 0[0m
+[0;32mI (34636) TWAI Listen Only: Rx overrun: 0[0m
+[0;32mI (34636) TWAI Listen Only: Bus errors: 19[0m
+[0;32mI (34636) TWAI Listen Only: #################################[0m
+[0;32mI (34646) TWAI Listen Only: Driver stopped[0m
+[0;32mI (34656) TWAI Listen Only: Driver uninstalled[0m
+[0;32mI (34656) gpio: GPIO[21]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (34666) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (34676) TWAI Listen Only: Results for 125kbit[0m
+[0;31mE (34686) TWAI: Alert 4096[0m
+[0;32mI (34686) TWAI Listen Only: Driver started[0m
+[0;32mI (38906) TWAI Listen Only: Received master ping[0m
+[0;32mI (38906) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (39156) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (39156) TWAI Listen Only: Received master start command[0m
+[0;32mI (41066) TWAI Listen Only: Received master stop command[0m
+[0;32mI (41076) TWAI Listen Only: Received slave stop response[0m
+[0;32mI (41076) TWAI Listen Only: #################################[0m
+[0;32mI (41076) TWAI Listen Only: Nr of data messages: 2508[0m
+[0;32mI (41086) TWAI Listen Only: Rx missed: 0[0m
+[0;32mI (41086) TWAI Listen Only: Rx overrun: 0[0m
+[0;32mI (41096) TWAI Listen Only: Bus errors: 15[0m
+[0;32mI (41096) TWAI Listen Only: #################################[0m
+[0;32mI (42346) TWAI Listen Only: Received master ping[0m
+[0;32mI (42346) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (42596) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (42596) TWAI Listen Only: Received master start command[0m
+[0;32mI (44516) TWAI Listen Only: Received master stop command[0m
+[0;32mI (44526) TWAI Listen Only: Received slave stop response[0m
+[0;32mI (44526) TWAI Listen Only: #################################[0m
+[0;32mI (44526) TWAI Listen Only: Nr of data messages: 2508[0m
+[0;32mI (44536) TWAI Listen Only: Rx missed: 0[0m
+[0;32mI (44536) TWAI Listen Only: Rx overrun: 0[0m
+[0;32mI (44546) TWAI Listen Only: Bus errors: 16[0m
+[0;32mI (44546) TWAI Listen Only: #################################[0m
+[0;32mI (45796) TWAI Listen Only: Received master ping[0m
+[0;32mI (45796) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (46046) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (46046) TWAI Listen Only: Received master start command[0m
+[0;32mI (47966) TWAI Listen Only: Received master stop command[0m
+[0;32mI (47966) TWAI Listen Only: Received slave stop response[0m
+[0;32mI (47966) TWAI Listen Only: #################################[0m
+[0;32mI (47966) TWAI Listen Only: Nr of data messages: 2508[0m
+[0;32mI (47976) TWAI Listen Only: Rx missed: 0[0m
+[0;32mI (47976) TWAI Listen Only: Rx overrun: 0[0m
+[0;32mI (47986) TWAI Listen Only: Bus errors: 17[0m
+[0;32mI (47986) TWAI Listen Only: #################################[0m
+[0;32mI (49236) TWAI Listen Only: Received master ping[0m
+[0;32mI (49236) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (49486) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (49486) TWAI Listen Only: Received master start command[0m
+[0;32mI (51396) TWAI Listen Only: Received master stop command[0m
+[0;32mI (51396) TWAI Listen Only: Received slave stop response[0m
+[0;32mI (51396) TWAI Listen Only: #################################[0m
+[0;32mI (51406) TWAI Listen Only: Nr of data messages: 2508[0m
+[0;32mI (51406) TWAI Listen Only: Rx missed: 0[0m
+[0;32mI (51416) TWAI Listen Only: Rx overrun: 0[0m
+[0;32mI (51416) TWAI Listen Only: Bus errors: 18[0m
+[0;32mI (51426) TWAI Listen Only: #################################[0m
+[0;32mI (52666) TWAI Listen Only: Received master ping[0m
+[0;32mI (52666) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (52916) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (52916) TWAI Listen Only: Received master start command[0m
+[0;32mI (54826) TWAI Listen Only: Received master stop command[0m
+[0;32mI (54836) TWAI Listen Only: Received slave stop response[0m
+[0;32mI (54836) TWAI Listen Only: #################################[0m
+[0;32mI (54836) TWAI Listen Only: Nr of data messages: 2508[0m
+[0;32mI (54836) TWAI Listen Only: Rx missed: 0[0m
+[0;32mI (54846) TWAI Listen Only: Rx overrun: 0[0m
+[0;32mI (54846) TWAI Listen Only: Bus errors: 19[0m
+[0;32mI (54856) TWAI Listen Only: #################################[0m
+[0;32mI (54856) TWAI Listen Only: Driver stopped[0m
+[0;32mI (54866) TWAI Listen Only: Driver uninstalled[0m
+[0;32mI (54876) gpio: GPIO[21]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (54876) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (54886) TWAI Listen Only: Results for 250kbit[0m
+[0;31mE (54896) TWAI: Alert 4096[0m
+[0;32mI (54896) TWAI Listen Only: Driver started[0m
+[0;32mI (59126) TWAI Listen Only: Received master ping[0m
+[0;32mI (59126) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (59376) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (59376) TWAI Listen Only: Received master start command[0m
+[0;32mI (60456) TWAI Listen Only: Received master stop command[0m
+[0;32mI (60456) TWAI Listen Only: Received slave stop response[0m
+[0;32mI (60456) TWAI Listen Only: #################################[0m
+[0;32mI (60466) TWAI Listen Only: Nr of data messages: 2508[0m
+[0;32mI (60466) TWAI Listen Only: Rx missed: 0[0m
+[0;32mI (60476) TWAI Listen Only: Rx overrun: 0[0m
+[0;32mI (60476) TWAI Listen Only: Bus errors: 15[0m
+[0;32mI (60486) TWAI Listen Only: #################################[0m
+[0;32mI (61726) TWAI Listen Only: Received master ping[0m
+[0;32mI (61726) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (61976) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (61976) TWAI Listen Only: Received master start command[0m
+[0;32mI (63056) TWAI Listen Only: Received master stop command[0m
+[0;32mI (63056) TWAI Listen Only: Received slave stop response[0m
+[0;32mI (63056) TWAI Listen Only: #################################[0m
+[0;32mI (63056) TWAI Listen Only: Nr of data messages: 2508[0m
+[0;32mI (63066) TWAI Listen Only: Rx missed: 0[0m
+[0;32mI (63066) TWAI Listen Only: Rx overrun: 0[0m
+[0;32mI (63076) TWAI Listen Only: Bus errors: 16[0m
+[0;32mI (63076) TWAI Listen Only: #################################[0m
+[0;32mI (64326) TWAI Listen Only: Received master ping[0m
+[0;32mI (64326) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (64576) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (64576) TWAI Listen Only: Received master start command[0m
+[0;32mI (65656) TWAI Listen Only: Received master stop command[0m
+[0;32mI (65666) TWAI Listen Only: Received slave stop response[0m
+[0;32mI (65666) TWAI Listen Only: #################################[0m
+[0;32mI (65666) TWAI Listen Only: Nr of data messages: 2508[0m
+[0;32mI (65676) TWAI Listen Only: Rx missed: 0[0m
+[0;32mI (65676) TWAI Listen Only: Rx overrun: 0[0m
+[0;32mI (65686) TWAI Listen Only: Bus errors: 17[0m
+[0;32mI (65686) TWAI Listen Only: #################################[0m
+[0;32mI (66926) TWAI Listen Only: Received master ping[0m
+[0;32mI (66926) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (67176) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (67176) TWAI Listen Only: Received master start command[0m
+[0;32mI (68256) TWAI Listen Only: Received master stop command[0m
+[0;32mI (68256) TWAI Listen Only: Received slave stop response[0m
+[0;32mI (68256) TWAI Listen Only: #################################[0m
+[0;32mI (68266) TWAI Listen Only: Nr of data messages: 2508[0m
+[0;32mI (68266) TWAI Listen Only: Rx missed: 0[0m
+[0;32mI (68276) TWAI Listen Only: Rx overrun: 0[0m
+[0;32mI (68276) TWAI Listen Only: Bus errors: 18[0m
+[0;32mI (68276) TWAI Listen Only: #################################[0m
+[0;32mI (69526) TWAI Listen Only: Received master ping[0m
+[0;32mI (69526) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (69776) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (69776) TWAI Listen Only: Received master start command[0m
+[0;32mI (70856) TWAI Listen Only: Received master stop command[0m
+[0;32mI (70856) TWAI Listen Only: Received slave stop response[0m
+[0;32mI (70856) TWAI Listen Only: #################################[0m
+[0;32mI (70866) TWAI Listen Only: Nr of data messages: 2508[0m
+[0;32mI (70866) TWAI Listen Only: Rx missed: 0[0m
+[0;32mI (70876) TWAI Listen Only: Rx overrun: 0[0m
+[0;32mI (70876) TWAI Listen Only: Bus errors: 19[0m
+[0;32mI (70886) TWAI Listen Only: #################################[0m
+[0;32mI (70886) TWAI Listen Only: Driver stopped[0m
+[0;32mI (70896) TWAI Listen Only: Driver uninstalled[0m
+[0;32mI (70896) gpio: GPIO[21]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (70906) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (70916) TWAI Listen Only: Results for 500kbit[0m
+[0;31mE (70926) TWAI: Alert 4096[0m
+[0;32mI (70926) TWAI Listen Only: Driver started[0m
+[0;32mI (75146) TWAI Listen Only: Received master ping[0m
+[0;32mI (75146) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (75396) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (75396) TWAI Listen Only: Received master start command[0m
+[0;32mI (76076) TWAI Listen Only: Received master stop command[0m
+[0;32mI (76076) TWAI Listen Only: Received slave stop response[0m
+[0;32mI (76076) TWAI Listen Only: #################################[0m
+[0;32mI (76086) TWAI Listen Only: Nr of data messages: 2508[0m
+[0;32mI (76086) TWAI Listen Only: Rx missed: 0[0m
+[0;32mI (76096) TWAI Listen Only: Rx overrun: 0[0m
+[0;32mI (76096) TWAI Listen Only: Bus errors: 15[0m
+[0;32mI (76106) TWAI Listen Only: #################################[0m
+[0;32mI (77346) TWAI Listen Only: Received master ping[0m
+[0;32mI (77346) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (77596) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (77596) TWAI Listen Only: Received master start command[0m
+[0;32mI (78276) TWAI Listen Only: Received master stop command[0m
+[0;32mI (78276) TWAI Listen Only: Received slave stop response[0m
+[0;32mI (78276) TWAI Listen Only: #################################[0m
+[0;32mI (78286) TWAI Listen Only: Nr of data messages: 2508[0m
+[0;32mI (78286) TWAI Listen Only: Rx missed: 0[0m
+[0;32mI (78296) TWAI Listen Only: Rx overrun: 0[0m
+[0;32mI (78296) TWAI Listen Only: Bus errors: 16[0m
+[0;32mI (78306) TWAI Listen Only: #################################[0m
+[0;32mI (79546) TWAI Listen Only: Received master ping[0m
+[0;32mI (79546) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (79796) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (79796) TWAI Listen Only: Received master start command[0m
+[0;32mI (80476) TWAI Listen Only: Received master stop command[0m
+[0;32mI (80476) TWAI Listen Only: Received slave stop response[0m
+[0;32mI (80476) TWAI Listen Only: #################################[0m
+[0;32mI (80486) TWAI Listen Only: Nr of data messages: 2508[0m
+[0;32mI (80486) TWAI Listen Only: Rx missed: 0[0m
+[0;32mI (80496) TWAI Listen Only: Rx overrun: 0[0m
+[0;32mI (80496) TWAI Listen Only: Bus errors: 17[0m
+[0;32mI (80506) TWAI Listen Only: #################################[0m
+[0;32mI (81746) TWAI Listen Only: Received master ping[0m
+[0;32mI (81746) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (81996) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (81996) TWAI Listen Only: Received master start command[0m
+[0;32mI (82686) TWAI Listen Only: Received master stop command[0m
+[0;32mI (82686) TWAI Listen Only: Received slave stop response[0m
+[0;32mI (82686) TWAI Listen Only: #################################[0m
+[0;32mI (82686) TWAI Listen Only: Nr of data messages: 2508[0m
+[0;32mI (82696) TWAI Listen Only: Rx missed: 0[0m
+[0;32mI (82696) TWAI Listen Only: Rx overrun: 0[0m
+[0;32mI (82706) TWAI Listen Only: Bus errors: 18[0m
+[0;32mI (82706) TWAI Listen Only: #################################[0m
+[0;32mI (83956) TWAI Listen Only: Received master ping[0m
+[0;32mI (83956) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (84206) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (84206) TWAI Listen Only: Received master start command[0m
+[0;32mI (84886) TWAI Listen Only: Received master stop command[0m
+[0;32mI (84886) TWAI Listen Only: Received slave stop response[0m
+[0;32mI (84896) TWAI Listen Only: #################################[0m
+[0;32mI (84896) TWAI Listen Only: Nr of data messages: 2508[0m
+[0;32mI (84906) TWAI Listen Only: Rx missed: 0[0m
+[0;32mI (84906) TWAI Listen Only: Rx overrun: 0[0m
+[0;32mI (84916) TWAI Listen Only: Bus errors: 19[0m
+[0;32mI (84916) TWAI Listen Only: #################################[0m
+[0;32mI (84926) TWAI Listen Only: Driver stopped[0m
+[0;32mI (84926) TWAI Listen Only: Driver uninstalled[0m
+[0;32mI (84936) gpio: GPIO[21]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (84946) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (84956) TWAI Listen Only: Results for 800kbit[0m
+[0;31mE (84956) TWAI: Alert 4096[0m
+[0;32mI (84956) TWAI Listen Only: Driver started[0m
+[0;32mI (89176) TWAI Listen Only: Received master ping[0m
+[0;32mI (89176) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (89426) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (89426) TWAI Listen Only: Received master start command[0m
+[0;32mI (89956) TWAI Listen Only: Received master stop command[0m
+[0;32mI (89956) TWAI Listen Only: Received slave stop response[0m
+[0;32mI (89956) TWAI Listen Only: #################################[0m
+[0;32mI (89956) TWAI Listen Only: Nr of data messages: 2508[0m
+[0;32mI (89966) TWAI Listen Only: Rx missed: 0[0m
+[0;32mI (89966) TWAI Listen Only: Rx overrun: 0[0m
+[0;32mI (89976) TWAI Listen Only: Bus errors: 15[0m
+[0;32mI (89976) TWAI Listen Only: #################################[0m
+[0;32mI (91226) TWAI Listen Only: Received master ping[0m
+[0;32mI (91226) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (91476) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (91476) TWAI Listen Only: Received master start command[0m
+[0;32mI (92006) TWAI Listen Only: Received master stop command[0m
+[0;32mI (92006) TWAI Listen Only: Received slave stop response[0m
+[0;32mI (92006) TWAI Listen Only: #################################[0m
+[0;32mI (92006) TWAI Listen Only: Nr of data messages: 2508[0m
+[0;32mI (92016) TWAI Listen Only: Rx missed: 0[0m
+[0;32mI (92016) TWAI Listen Only: Rx overrun: 0[0m
+[0;32mI (92026) TWAI Listen Only: Bus errors: 16[0m
+[0;32mI (92026) TWAI Listen Only: #################################[0m
+[0;32mI (93276) TWAI Listen Only: Received master ping[0m
+[0;32mI (93276) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (93526) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (93526) TWAI Listen Only: Received master start command[0m
+[0;32mI (94056) TWAI Listen Only: Received master stop command[0m
+[0;32mI (94056) TWAI Listen Only: Received slave stop response[0m
+[0;32mI (94056) TWAI Listen Only: #################################[0m
+[0;32mI (94056) TWAI Listen Only: Nr of data messages: 2508[0m
+[0;32mI (94066) TWAI Listen Only: Rx missed: 0[0m
+[0;32mI (94066) TWAI Listen Only: Rx overrun: 0[0m
+[0;32mI (94076) TWAI Listen Only: Bus errors: 17[0m
+[0;32mI (94076) TWAI Listen Only: #################################[0m
+[0;32mI (95326) TWAI Listen Only: Received master ping[0m
+[0;32mI (95326) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (95576) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (95576) TWAI Listen Only: Received master start command[0m
+[0;32mI (96106) TWAI Listen Only: Received master stop command[0m
+[0;32mI (96106) TWAI Listen Only: Received slave stop response[0m
+[0;32mI (96106) TWAI Listen Only: #################################[0m
+[0;32mI (96106) TWAI Listen Only: Nr of data messages: 2508[0m
+[0;32mI (96116) TWAI Listen Only: Rx missed: 0[0m
+[0;32mI (96116) TWAI Listen Only: Rx overrun: 0[0m
+[0;32mI (96126) TWAI Listen Only: Bus errors: 18[0m
+[0;32mI (96126) TWAI Listen Only: #################################[0m
+[0;32mI (97376) TWAI Listen Only: Received master ping[0m
+[0;32mI (97376) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (97626) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (97626) TWAI Listen Only: Received master start command[0m
+[0;32mI (98156) TWAI Listen Only: Received master stop command[0m
+[0;32mI (98156) TWAI Listen Only: Received slave stop response[0m
+[0;32mI (98156) TWAI Listen Only: #################################[0m
+[0;32mI (98166) TWAI Listen Only: Nr of data messages: 2508[0m
+[0;32mI (98166) TWAI Listen Only: Rx missed: 0[0m
+[0;32mI (98176) TWAI Listen Only: Rx overrun: 0[0m
+[0;32mI (98176) TWAI Listen Only: Bus errors: 19[0m
+[0;32mI (98186) TWAI Listen Only: #################################[0m
+[0;32mI (98186) TWAI Listen Only: Driver stopped[0m
+[0;32mI (98196) TWAI Listen Only: Driver uninstalled[0m
+[0;32mI (98196) gpio: GPIO[21]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (98206) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (98216) TWAI Listen Only: Results for 1mbit[0m
+[0;31mE (98226) TWAI: Alert 4096[0m
+[0;32mI (98226) TWAI Listen Only: Driver started[0m
+[0;32mI (102446) TWAI Listen Only: Received master ping[0m
+[0;32mI (102446) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (102696) TWAI Listen Only: Received slave ping response[0m
+[0;32mI (102696) TWAI Listen Only: Received master start command[0m

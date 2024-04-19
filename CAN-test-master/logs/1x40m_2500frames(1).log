@@ -1,0 +1,521 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7076
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF 5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  8 2024 16:37:17[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a574h ( 42356) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001a59c vaddr=3ffb0000 size=02144h (  8516) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001c6e8 vaddr=40080000 size=03930h ( 14640) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=167dch ( 92124) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=00036804 vaddr=40083930 size=08b38h ( 35640) load[0m
+[0;32mI (188) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (188) boot: Disabling RNG early entropy source...[0m
+[0;32mI (200) cpu_start: Multicore app[0m
+[0;32mI (200) cpu_start: Pro cpu up.[0m
+[0;32mI (200) cpu_start: Starting app cpu, entry point is 0x40081644[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (218) cpu_start: Pro cpu start user code[0m
+[0;32mI (218) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (218) cpu_start: Application information:[0m
+[0;32mI (223) cpu_start: Project name:     CAN-test-master[0m
+[0;32mI (229) cpu_start: App version:      f501904-dirty[0m
+[0;32mI (234) cpu_start: Compile time:     Apr  8 2024 16:36:43[0m
+[0;32mI (240) cpu_start: ELF file SHA256:  f7f823685c5deb3b...[0m
+[0;32mI (246) cpu_start: ESP-IDF:          5.1.2[0m
+[0;32mI (251) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (256) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (260) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (265) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (273) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (278) heap_init: At 3FFB2A10 len 0002D5F0 (181 KiB): DRAM[0m
+[0;32mI (285) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (291) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (298) heap_init: At 4008C468 len 00013B98 (78 KiB): IRAM[0m
+[0;32mI (305) spi_flash: detected chip: generic[0m
+[0;32mI (308) spi_flash: flash io: dio[0m
+[0;32mI (313) app_start: Starting scheduler on CPU0[0m
+[0;32mI (317) app_start: Starting scheduler on CPU1[0m
+[0;32mI (317) main_task: Started on CPU0[0m
+[0;32mI (327) main_task: Calling app_main()[0m
+[0;32mI (327) gpio: GPIO[16]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (337) gpio: GPIO[17]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (347) TWAI Master: Results for 50kbit[0m
+[0;32mI (347) TWAI Master: Alerts configured[0m
+[0;32mI (357) TWAI Master: Driver started[0m
+[0;32mI (357) TWAI Master: Listening for ping response[0m
+[0;32mI (367) TWAI Master: Received ping response[0m
+[0;32mI (367) TWAI Master: Listening for data[0m
+[0;32mI (607) TWAI Master: Sending start command.[0m
+[0;32mI (857) TWAI Master: Transmitted start command[0m
+[0;32mI (4807) TWAI Master: Driver stopped[0m
+[0;32mI (4807) TWAI Master: #################################[0m
+[0;32mI (4807) TWAI Master: Time elapsed: 4447187 us[0m
+[0;32mI (4807) TWAI Master: Rx missed: 0[0m
+[0;32mI (4817) TWAI Master: Rx overrun: 0[0m
+[0;32mI (4817) TWAI Master: Tx failed: 0[0m
+[0;32mI (4817) TWAI Master: Bus errors: 0[0m
+[0;32mI (4827) TWAI Master: #################################[0m
+[0;32mI (5827) TWAI Master: Driver started[0m
+[0;32mI (5827) TWAI Master: Listening for ping response[0m
+[0;32mI (6077) TWAI Master: Received ping response[0m
+[0;32mI (6077) TWAI Master: Listening for data[0m
+[0;32mI (6327) TWAI Master: Sending start command.[0m
+[0;32mI (6577) TWAI Master: Transmitted start command[0m
+[0;32mI (10767) TWAI Master: Driver stopped[0m
+[0;32mI (10767) TWAI Master: #################################[0m
+[0;32mI (10777) TWAI Master: Time elapsed: 4949755 us[0m
+[0;32mI (10777) TWAI Master: Rx missed: 0[0m
+[0;32mI (10777) TWAI Master: Rx overrun: 0[0m
+[0;32mI (10787) TWAI Master: Tx failed: 1[0m
+[0;32mI (10787) TWAI Master: Bus errors: 1[0m
+[0;32mI (10797) TWAI Master: #################################[0m
+[0;32mI (11797) TWAI Master: Driver started[0m
+[0;32mI (11797) TWAI Master: Listening for ping response[0m
+[0;32mI (12047) TWAI Master: Received ping response[0m
+[0;32mI (12047) TWAI Master: Listening for data[0m
+[0;32mI (12297) TWAI Master: Sending start command.[0m
+[0;32mI (12547) TWAI Master: Transmitted start command[0m
+[0;32mI (16737) TWAI Master: Driver stopped[0m
+[0;32mI (16737) TWAI Master: #################################[0m
+[0;32mI (16737) TWAI Master: Time elapsed: 4940493 us[0m
+[0;32mI (16737) TWAI Master: Rx missed: 0[0m
+[0;32mI (16737) TWAI Master: Rx overrun: 0[0m
+[0;32mI (16747) TWAI Master: Tx failed: 2[0m
+[0;32mI (16747) TWAI Master: Bus errors: 2[0m
+[0;32mI (16757) TWAI Master: #################################[0m
+[0;32mI (17757) TWAI Master: Driver started[0m
+[0;32mI (17757) TWAI Master: Listening for ping response[0m
+[0;32mI (18007) TWAI Master: Received ping response[0m
+[0;32mI (18007) TWAI Master: Listening for data[0m
+[0;32mI (18257) TWAI Master: Sending start command.[0m
+[0;32mI (18507) TWAI Master: Transmitted start command[0m
+[0;32mI (22667) TWAI Master: Driver stopped[0m
+[0;32mI (22667) TWAI Master: #################################[0m
+[0;32mI (22667) TWAI Master: Time elapsed: 4914484 us[0m
+[0;32mI (22667) TWAI Master: Rx missed: 0[0m
+[0;32mI (22677) TWAI Master: Rx overrun: 0[0m
+[0;32mI (22677) TWAI Master: Tx failed: 3[0m
+[0;32mI (22687) TWAI Master: Bus errors: 3[0m
+[0;32mI (22687) TWAI Master: #################################[0m
+[0;32mI (23697) TWAI Master: Driver started[0m
+[0;32mI (23697) TWAI Master: Listening for ping response[0m
+[0;32mI (23947) TWAI Master: Received ping response[0m
+[0;32mI (23947) TWAI Master: Listening for data[0m
+[0;32mI (24197) TWAI Master: Sending start command.[0m
+[0;32mI (24447) TWAI Master: Transmitted start command[0m
+[0;32mI (28617) TWAI Master: Driver stopped[0m
+[0;32mI (28617) TWAI Master: #################################[0m
+[0;32mI (28617) TWAI Master: Time elapsed: 4926592 us[0m
+[0;32mI (28627) TWAI Master: Rx missed: 0[0m
+[0;32mI (28627) TWAI Master: Rx overrun: 0[0m
+[0;32mI (28627) TWAI Master: Tx failed: 4[0m
+[0;32mI (28637) TWAI Master: Bus errors: 4[0m
+[0;32mI (28637) TWAI Master: #################################[0m
+[0;32mI (29647) TWAI Master: Driver uninstalled[0m
+[0;32mI (29647) gpio: GPIO[16]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (29647) gpio: GPIO[17]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (29657) TWAI Master: Results for 125kbit[0m
+[0;32mI (29657) TWAI Master: Alerts configured[0m
+[0;32mI (29667) TWAI Master: Driver started[0m
+[0;32mI (29667) TWAI Master: Listening for ping response[0m
+[0;33mW (32417) TWAI: Alert 256[0m
+[0;31mE (32747) TWAI: Alert 4096[0m
+[0;32mI (32917) TWAI Master: Received ping response[0m
+[0;32mI (32917) TWAI Master: Listening for data[0m
+[0;32mI (33167) TWAI Master: Sending start command.[0m
+[0;32mI (33417) TWAI Master: Transmitted start command[0m
+[0;32mI (35077) TWAI Master: Driver stopped[0m
+[0;32mI (35077) TWAI Master: #################################[0m
+[0;32mI (35077) TWAI Master: Time elapsed: 5412729 us[0m
+[0;32mI (35087) TWAI Master: Rx missed: 0[0m
+[0;32mI (35087) TWAI Master: Rx overrun: 0[0m
+[0;32mI (35097) TWAI Master: Tx failed: 13[0m
+[0;32mI (35097) TWAI Master: Bus errors: 14[0m
+[0;32mI (35107) TWAI Master: #################################[0m
+[0;32mI (36107) TWAI Master: Driver started[0m
+[0;32mI (36107) TWAI Master: Listening for ping response[0m
+[0;32mI (36357) TWAI Master: Received ping response[0m
+[0;32mI (36357) TWAI Master: Listening for data[0m
+[0;32mI (36607) TWAI Master: Sending start command.[0m
+[0;32mI (36857) TWAI Master: Transmitted start command[0m
+[0;32mI (38527) TWAI Master: Driver stopped[0m
+[0;32mI (38527) TWAI Master: #################################[0m
+[0;32mI (38527) TWAI Master: Time elapsed: 2425055 us[0m
+[0;32mI (38527) TWAI Master: Rx missed: 0[0m
+[0;32mI (38537) TWAI Master: Rx overrun: 0[0m
+[0;32mI (38537) TWAI Master: Tx failed: 14[0m
+[0;32mI (38547) TWAI Master: Bus errors: 15[0m
+[0;32mI (38547) TWAI Master: #################################[0m
+[0;32mI (39557) TWAI Master: Driver started[0m
+[0;32mI (39557) TWAI Master: Listening for ping response[0m
+[0;32mI (39807) TWAI Master: Received ping response[0m
+[0;32mI (39807) TWAI Master: Listening for data[0m
+[0;32mI (40057) TWAI Master: Sending start command.[0m
+[0;32mI (40307) TWAI Master: Transmitted start command[0m
+[0;32mI (41967) TWAI Master: Driver stopped[0m
+[0;32mI (41967) TWAI Master: #################################[0m
+[0;32mI (41967) TWAI Master: Time elapsed: 2413003 us[0m
+[0;32mI (41967) TWAI Master: Rx missed: 0[0m
+[0;32mI (41977) TWAI Master: Rx overrun: 0[0m
+[0;32mI (41977) TWAI Master: Tx failed: 15[0m
+[0;32mI (41987) TWAI Master: Bus errors: 16[0m
+[0;32mI (41987) TWAI Master: #################################[0m
+[0;32mI (42997) TWAI Master: Driver started[0m
+[0;32mI (42997) TWAI Master: Listening for ping response[0m
+[0;32mI (43247) TWAI Master: Received ping response[0m
+[0;32mI (43247) TWAI Master: Listening for data[0m
+[0;32mI (43497) TWAI Master: Sending start command.[0m
+[0;32mI (43747) TWAI Master: Transmitted start command[0m
+[0;32mI (45397) TWAI Master: Driver stopped[0m
+[0;32mI (45397) TWAI Master: #################################[0m
+[0;32mI (45397) TWAI Master: Time elapsed: 2407358 us[0m
+[0;32mI (45407) TWAI Master: Rx missed: 0[0m
+[0;32mI (45407) TWAI Master: Rx overrun: 0[0m
+[0;32mI (45417) TWAI Master: Tx failed: 16[0m
+[0;32mI (45417) TWAI Master: Bus errors: 17[0m
+[0;32mI (45417) TWAI Master: #################################[0m
+[0;32mI (46427) TWAI Master: Driver started[0m
+[0;32mI (46427) TWAI Master: Listening for ping response[0m
+[0;32mI (46677) TWAI Master: Received ping response[0m
+[0;32mI (46677) TWAI Master: Listening for data[0m
+[0;32mI (46927) TWAI Master: Sending start command.[0m
+[0;32mI (47177) TWAI Master: Transmitted start command[0m
+[0;32mI (48837) TWAI Master: Driver stopped[0m
+[0;32mI (48837) TWAI Master: #################################[0m
+[0;32mI (48837) TWAI Master: Time elapsed: 2411208 us[0m
+[0;32mI (48837) TWAI Master: Rx missed: 0[0m
+[0;32mI (48837) TWAI Master: Rx overrun: 0[0m
+[0;32mI (48847) TWAI Master: Tx failed: 17[0m
+[0;32mI (48847) TWAI Master: Bus errors: 18[0m
+[0;32mI (48857) TWAI Master: #################################[0m
+[0;32mI (49857) TWAI Master: Driver uninstalled[0m
+[0;32mI (49857) gpio: GPIO[16]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (49857) gpio: GPIO[17]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (49867) TWAI Master: Results for 250kbit[0m
+[0;32mI (49867) TWAI Master: Alerts configured[0m
+[0;32mI (49877) TWAI Master: Driver started[0m
+[0;32mI (49877) TWAI Master: Listening for ping response[0m
+[0;33mW (52627) TWAI: Alert 256[0m
+[0;31mE (52967) TWAI: Alert 4096[0m
+[0;32mI (53127) TWAI Master: Received ping response[0m
+[0;32mI (53127) TWAI Master: Listening for data[0m
+[0;32mI (53377) TWAI Master: Sending start command.[0m
+[0;32mI (53627) TWAI Master: Transmitted start command[0m
+[0;32mI (54447) TWAI Master: Driver stopped[0m
+[0;32mI (54447) TWAI Master: #################################[0m
+[0;32mI (54447) TWAI Master: Time elapsed: 4568596 us[0m
+[0;32mI (54447) TWAI Master: Rx missed: 0[0m
+[0;32mI (54457) TWAI Master: Rx overrun: 0[0m
+[0;32mI (54457) TWAI Master: Tx failed: 13[0m
+[0;32mI (54467) TWAI Master: Bus errors: 14[0m
+[0;32mI (54467) TWAI Master: #################################[0m
+[0;32mI (55477) TWAI Master: Driver started[0m
+[0;32mI (55477) TWAI Master: Listening for ping response[0m
+[0;32mI (55727) TWAI Master: Received ping response[0m
+[0;32mI (55727) TWAI Master: Listening for data[0m
+[0;32mI (55977) TWAI Master: Sending start command.[0m
+[0;32mI (56227) TWAI Master: Transmitted start command[0m
+[0;32mI (57057) TWAI Master: Driver stopped[0m
+[0;32mI (57057) TWAI Master: #################################[0m
+[0;32mI (57057) TWAI Master: Time elapsed: 1580984 us[0m
+[0;32mI (57057) TWAI Master: Rx missed: 0[0m
+[0;32mI (57057) TWAI Master: Rx overrun: 0[0m
+[0;32mI (57067) TWAI Master: Tx failed: 14[0m
+[0;32mI (57067) TWAI Master: Bus errors: 15[0m
+[0;32mI (57077) TWAI Master: #################################[0m
+[0;32mI (58077) TWAI Master: Driver started[0m
+[0;32mI (58077) TWAI Master: Listening for ping response[0m
+[0;32mI (58327) TWAI Master: Received ping response[0m
+[0;32mI (58327) TWAI Master: Listening for data[0m
+[0;32mI (58577) TWAI Master: Sending start command.[0m
+[0;32mI (58827) TWAI Master: Transmitted start command[0m
+[0;32mI (59647) TWAI Master: Driver stopped[0m
+[0;32mI (59647) TWAI Master: #################################[0m
+[0;32mI (59647) TWAI Master: Time elapsed: 1575941 us[0m
+[0;32mI (59657) TWAI Master: Rx missed: 0[0m
+[0;32mI (59657) TWAI Master: Rx overrun: 0[0m
+[0;32mI (59657) TWAI Master: Tx failed: 15[0m
+[0;32mI (59667) TWAI Master: Bus errors: 16[0m
+[0;32mI (59667) TWAI Master: #################################[0m
+[0;32mI (60677) TWAI Master: Driver started[0m
+[0;32mI (60677) TWAI Master: Listening for ping response[0m
+[0;32mI (60927) TWAI Master: Received ping response[0m
+[0;32mI (60927) TWAI Master: Listening for data[0m
+[0;32mI (61177) TWAI Master: Sending start command.[0m
+[0;32mI (61427) TWAI Master: Transmitted start command[0m
+[0;32mI (62247) TWAI Master: Driver stopped[0m
+[0;32mI (62247) TWAI Master: #################################[0m
+[0;32mI (62247) TWAI Master: Time elapsed: 1577345 us[0m
+[0;32mI (62257) TWAI Master: Rx missed: 0[0m
+[0;32mI (62257) TWAI Master: Rx overrun: 0[0m
+[0;32mI (62267) TWAI Master: Tx failed: 16[0m
+[0;32mI (62267) TWAI Master: Bus errors: 17[0m
+[0;32mI (62267) TWAI Master: #################################[0m
+[0;32mI (63277) TWAI Master: Driver started[0m
+[0;32mI (63277) TWAI Master: Listening for ping response[0m
+[0;32mI (63527) TWAI Master: Received ping response[0m
+[0;32mI (63527) TWAI Master: Listening for data[0m
+[0;32mI (63777) TWAI Master: Sending start command.[0m
+[0;32mI (64027) TWAI Master: Transmitted start command[0m
+[0;32mI (64847) TWAI Master: Driver stopped[0m
+[0;32mI (64847) TWAI Master: #################################[0m
+[0;32mI (64847) TWAI Master: Time elapsed: 1577393 us[0m
+[0;32mI (64857) TWAI Master: Rx missed: 0[0m
+[0;32mI (64857) TWAI Master: Rx overrun: 0[0m
+[0;32mI (64867) TWAI Master: Tx failed: 17[0m
+[0;32mI (64867) TWAI Master: Bus errors: 18[0m
+[0;32mI (64867) TWAI Master: #################################[0m
+[0;32mI (65877) TWAI Master: Driver uninstalled[0m
+[0;32mI (65877) gpio: GPIO[16]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (65877) gpio: GPIO[17]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (65887) TWAI Master: Results for 500kbit[0m
+[0;32mI (65887) TWAI Master: Alerts configured[0m
+[0;32mI (65897) TWAI Master: Driver started[0m
+[0;32mI (65897) TWAI Master: Listening for ping response[0m
+[0;33mW (68647) TWAI: Alert 256[0m
+[0;31mE (68987) TWAI: Alert 4096[0m
+[0;32mI (69147) TWAI Master: Received ping response[0m
+[0;32mI (69147) TWAI Master: Listening for data[0m
+[0;32mI (69397) TWAI Master: Sending start command.[0m
+[0;32mI (69647) TWAI Master: Transmitted start command[0m
+[0;32mI (70067) TWAI Master: Driver stopped[0m
+[0;32mI (70067) TWAI Master: #################################[0m
+[0;32mI (70067) TWAI Master: Time elapsed: 4168960 us[0m
+[0;32mI (70067) TWAI Master: Rx missed: 0[0m
+[0;32mI (70077) TWAI Master: Rx overrun: 0[0m
+[0;32mI (70077) TWAI Master: Tx failed: 13[0m
+[0;32mI (70087) TWAI Master: Bus errors: 14[0m
+[0;32mI (70087) TWAI Master: #################################[0m
+[0;32mI (71097) TWAI Master: Driver started[0m
+[0;32mI (71097) TWAI Master: Listening for ping response[0m
+[0;32mI (71347) TWAI Master: Received ping response[0m
+[0;32mI (71347) TWAI Master: Listening for data[0m
+[0;32mI (71597) TWAI Master: Sending start command.[0m
+[0;32mI (71847) TWAI Master: Transmitted start command[0m
+[0;32mI (72267) TWAI Master: Driver stopped[0m
+[0;32mI (72267) TWAI Master: #################################[0m
+[0;32mI (72267) TWAI Master: Time elapsed: 1176089 us[0m
+[0;32mI (72277) TWAI Master: Rx missed: 0[0m
+[0;32mI (72277) TWAI Master: Rx overrun: 0[0m
+[0;32mI (72277) TWAI Master: Tx failed: 14[0m
+[0;32mI (72287) TWAI Master: Bus errors: 15[0m
+[0;32mI (72287) TWAI Master: #################################[0m
+[0;32mI (73297) TWAI Master: Driver started[0m
+[0;32mI (73297) TWAI Master: Listening for ping response[0m
+[0;32mI (73547) TWAI Master: Received ping response[0m
+[0;32mI (73547) TWAI Master: Listening for data[0m
+[0;32mI (73797) TWAI Master: Sending start command.[0m
+[0;32mI (74047) TWAI Master: Transmitted start command[0m
+[0;32mI (74477) TWAI Master: Driver stopped[0m
+[0;32mI (74477) TWAI Master: #################################[0m
+[0;32mI (74477) TWAI Master: Time elapsed: 1181636 us[0m
+[0;32mI (74477) TWAI Master: Rx missed: 0[0m
+[0;32mI (74487) TWAI Master: Rx overrun: 0[0m
+[0;32mI (74487) TWAI Master: Tx failed: 15[0m
+[0;32mI (74487) TWAI Master: Bus errors: 16[0m
+[0;32mI (74497) TWAI Master: #################################[0m
+[0;32mI (75497) TWAI Master: Driver started[0m
+[0;32mI (75497) TWAI Master: Listening for ping response[0m
+[0;32mI (75747) TWAI Master: Received ping response[0m
+[0;32mI (75747) TWAI Master: Listening for data[0m
+[0;32mI (75997) TWAI Master: Sending start command.[0m
+[0;32mI (76247) TWAI Master: Transmitted start command[0m
+[0;32mI (76677) TWAI Master: Driver stopped[0m
+[0;32mI (76677) TWAI Master: #################################[0m
+[0;32mI (76677) TWAI Master: Time elapsed: 1184498 us[0m
+[0;32mI (76677) TWAI Master: Rx missed: 0[0m
+[0;32mI (76687) TWAI Master: Rx overrun: 0[0m
+[0;32mI (76687) TWAI Master: Tx failed: 16[0m
+[0;32mI (76697) TWAI Master: Bus errors: 17[0m
+[0;32mI (76697) TWAI Master: #################################[0m
+[0;32mI (77707) TWAI Master: Driver started[0m
+[0;32mI (77707) TWAI Master: Listening for ping response[0m
+[0;32mI (77957) TWAI Master: Received ping response[0m
+[0;32mI (77957) TWAI Master: Listening for data[0m
+[0;32mI (78207) TWAI Master: Sending start command.[0m
+[0;32mI (78457) TWAI Master: Transmitted start command[0m
+[0;32mI (78887) TWAI Master: Driver stopped[0m
+[0;32mI (78887) TWAI Master: #################################[0m
+[0;32mI (78887) TWAI Master: Time elapsed: 1180827 us[0m
+[0;32mI (78887) TWAI Master: Rx missed: 0[0m
+[0;32mI (78887) TWAI Master: Rx overrun: 0[0m
+[0;32mI (78897) TWAI Master: Tx failed: 17[0m
+[0;32mI (78897) TWAI Master: Bus errors: 18[0m
+[0;32mI (78907) TWAI Master: #################################[0m
+[0;32mI (79907) TWAI Master: Driver uninstalled[0m
+[0;32mI (79907) gpio: GPIO[16]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (79907) gpio: GPIO[17]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (79917) TWAI Master: Results for 800kbit[0m
+[0;32mI (79917) TWAI Master: Alerts configured[0m
+[0;32mI (79927) TWAI Master: Driver started[0m
+[0;32mI (79927) TWAI Master: Listening for ping response[0m
+[0;33mW (82677) TWAI: Alert 256[0m
+[0;31mE (83017) TWAI: Alert 4096[0m
+[0;32mI (83177) TWAI Master: Received ping response[0m
+[0;32mI (83177) TWAI Master: Listening for data[0m
+[0;32mI (83427) TWAI Master: Sending start command.[0m
+[0;32mI (83677) TWAI Master: Transmitted start command[0m
+[0;32mI (83947) TWAI Master: Driver stopped[0m
+[0;32mI (83947) TWAI Master: #################################[0m
+[0;32mI (83947) TWAI Master: Time elapsed: 4016219 us[0m
+[0;32mI (83947) TWAI Master: Rx missed: 0[0m
+[0;32mI (83957) TWAI Master: Rx overrun: 0[0m
+[0;32mI (83957) TWAI Master: Tx failed: 13[0m
+[0;32mI (83957) TWAI Master: Bus errors: 14[0m
+[0;32mI (83967) TWAI Master: #################################[0m
+[0;32mI (84977) TWAI Master: Driver started[0m
+[0;32mI (84977) TWAI Master: Listening for ping response[0m
+[0;32mI (85227) TWAI Master: Received ping response[0m
+[0;32mI (85227) TWAI Master: Listening for data[0m
+[0;32mI (85477) TWAI Master: Sending start command.[0m
+[0;32mI (85727) TWAI Master: Transmitted start command[0m
+[0;32mI (85997) TWAI Master: Driver stopped[0m
+[0;32mI (85997) TWAI Master: #################################[0m
+[0;32mI (85997) TWAI Master: Time elapsed: 1022771 us[0m
+[0;32mI (85997) TWAI Master: Rx missed: 0[0m
+[0;32mI (86007) TWAI Master: Rx overrun: 0[0m
+[0;32mI (86007) TWAI Master: Tx failed: 14[0m
+[0;32mI (86007) TWAI Master: Bus errors: 15[0m
+[0;32mI (86017) TWAI Master: #################################[0m
+[0;32mI (87027) TWAI Master: Driver started[0m
+[0;32mI (87027) TWAI Master: Listening for ping response[0m
+[0;32mI (87277) TWAI Master: Received ping response[0m
+[0;32mI (87277) TWAI Master: Listening for data[0m
+[0;32mI (87527) TWAI Master: Sending start command.[0m
+[0;32mI (87777) TWAI Master: Transmitted start command[0m
+[0;32mI (88047) TWAI Master: Driver stopped[0m
+[0;32mI (88047) TWAI Master: #################################[0m
+[0;32mI (88047) TWAI Master: Time elapsed: 1023678 us[0m
+[0;32mI (88047) TWAI Master: Rx missed: 0[0m
+[0;32mI (88057) TWAI Master: Rx overrun: 0[0m
+[0;32mI (88057) TWAI Master: Tx failed: 15[0m
+[0;32mI (88067) TWAI Master: Bus errors: 16[0m
+[0;32mI (88067) TWAI Master: #################################[0m
+[0;32mI (89077) TWAI Master: Driver started[0m
+[0;32mI (89077) TWAI Master: Listening for ping response[0m
+[0;32mI (89327) TWAI Master: Received ping response[0m
+[0;32mI (89327) TWAI Master: Listening for data[0m
+[0;32mI (89577) TWAI Master: Sending start command.[0m
+[0;32mI (89827) TWAI Master: Transmitted start command[0m
+[0;32mI (90097) TWAI Master: Driver stopped[0m
+[0;32mI (90097) TWAI Master: #################################[0m
+[0;32mI (90097) TWAI Master: Time elapsed: 1022494 us[0m
+[0;32mI (90097) TWAI Master: Rx missed: 0[0m
+[0;32mI (90107) TWAI Master: Rx overrun: 0[0m
+[0;32mI (90107) TWAI Master: Tx failed: 16[0m
+[0;32mI (90107) TWAI Master: Bus errors: 17[0m
+[0;32mI (90117) TWAI Master: #################################[0m
+[0;32mI (91127) TWAI Master: Driver started[0m
+[0;32mI (91127) TWAI Master: Listening for ping response[0m
+[0;32mI (91377) TWAI Master: Received ping response[0m
+[0;32mI (91377) TWAI Master: Listening for data[0m
+[0;32mI (91627) TWAI Master: Sending start command.[0m
+[0;32mI (91877) TWAI Master: Transmitted start command[0m
+[0;32mI (92147) TWAI Master: Driver stopped[0m
+[0;32mI (92147) TWAI Master: #################################[0m
+[0;32mI (92147) TWAI Master: Time elapsed: 1024514 us[0m
+[0;32mI (92147) TWAI Master: Rx missed: 0[0m
+[0;32mI (92157) TWAI Master: Rx overrun: 0[0m
+[0;32mI (92157) TWAI Master: Tx failed: 17[0m
+[0;32mI (92167) TWAI Master: Bus errors: 18[0m
+[0;32mI (92167) TWAI Master: #################################[0m
+[0;32mI (93177) TWAI Master: Driver uninstalled[0m
+[0;32mI (93177) gpio: GPIO[16]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (93177) gpio: GPIO[17]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (93187) TWAI Master: Results for 1mbit[0m
+[0;32mI (93187) TWAI Master: Alerts configured[0m
+[0;32mI (93197) TWAI Master: Driver started[0m
+[0;32mI (93197) TWAI Master: Listening for ping response[0m
+[0;33mW (95947) TWAI: Alert 256[0m
+[0;31mE (96277) TWAI: Alert 4096[0m
+[0;32mI (96447) TWAI Master: Received ping response[0m
+[0;32mI (96447) TWAI Master: Listening for data[0m
+[0;32mI (96697) TWAI Master: Sending start command.[0m
+[0;32mI (96947) TWAI Master: Transmitted start command[0m
+[0;32mI (97167) TWAI Master: Driver stopped[0m
+[0;32mI (97167) TWAI Master: #################################[0m
+[0;32mI (97167) TWAI Master: Time elapsed: 3969880 us[0m
+[0;32mI (97177) TWAI Master: Rx missed: 0[0m
+[0;32mI (97177) TWAI Master: Rx overrun: 0[0m
+[0;32mI (97177) TWAI Master: Tx failed: 13[0m
+[0;32mI (97187) TWAI Master: Bus errors: 14[0m
+[0;32mI (97187) TWAI Master: #################################[0m
+[0;32mI (98197) TWAI Master: Driver started[0m
+[0;32mI (98197) TWAI Master: Listening for ping response[0m
+[0;32mI (98447) TWAI Master: Received ping response[0m
+[0;32mI (98447) TWAI Master: Listening for data[0m
+[0;32mI (98697) TWAI Master: Sending start command.[0m
+[0;32mI (98947) TWAI Master: Transmitted start command[0m
+[0;32mI (99167) TWAI Master: Driver stopped[0m
+[0;32mI (99167) TWAI Master: #################################[0m
+[0;32mI (99167) TWAI Master: Time elapsed: 974312 us[0m
+[0;32mI (99167) TWAI Master: Rx missed: 0[0m
+[0;32mI (99177) TWAI Master: Rx overrun: 0[0m
+[0;32mI (99177) TWAI Master: Tx failed: 14[0m
+[0;32mI (99187) TWAI Master: Bus errors: 15[0m
+[0;32mI (99187) TWAI Master: #################################[0m
+[0;32mI (100197) TWAI Master: Driver started[0m
+[0;32mI (100197) TWAI Master: Listening for ping response[0m
+[0;32mI (100447) TWAI Master: Received ping response[0m
+[0;32mI (100447) TWAI Master: Listening for data[0m
+[0;32mI (100697) TWAI Master: Sending start command.[0m
+[0;32mI (100947) TWAI Master: Transmitted start command[0m
+[0;32mI (101167) TWAI Master: Driver stopped[0m
+[0;32mI (101167) TWAI Master: #################################[0m
+[0;32mI (101167) TWAI Master: Time elapsed: 972447 us[0m
+[0;32mI (101167) TWAI Master: Rx missed: 0[0m
+[0;32mI (101177) TWAI Master: Rx overrun: 0[0m
+[0;32mI (101177) TWAI Master: Tx failed: 15[0m
+[0;32mI (101187) TWAI Master: Bus errors: 16[0m
+[0;32mI (101187) TWAI Master: #################################[0m
+[0;32mI (102197) TWAI Master: Driver started[0m
+[0;32mI (102197) TWAI Master: Listening for ping response[0m
+[0;32mI (102447) TWAI Master: Received ping response[0m
+[0;32mI (102447) TWAI Master: Listening for data[0m
+[0;32mI (102697) TWAI Master: Sending start command.[0m
+[0;32mI (102947) TWAI Master: Transmitted start command[0m
+[0;32mI (103167) TWAI Master: Driver stopped[0m
+[0;32mI (103167) TWAI Master: #################################[0m
+[0;32mI (103167) TWAI Master: Time elapsed: 973072 us[0m
+[0;32mI (103167) TWAI Master: Rx missed: 0[0m
+[0;32mI (103177) TWAI Master: Rx overrun: 0[0m
+[0;32mI (103177) TWAI Master: Tx failed: 16[0m
+[0;32mI (103187) TWAI Master: Bus errors: 17[0m
+[0;32mI (103187) TWAI Master: #################################[0m
+[0;32mI (104197) TWAI Master: Driver started[0m
+[0;32mI (104197) TWAI Master: Listening for ping response[0m
+[0;32mI (104447) TWAI Master: Received ping response[0m
+[0;32mI (104447) TWAI Master: Listening for data[0m
+[0;32mI (104697) TWAI Master: Sending start command.[0m
+[0;32mI (104947) TWAI Master: Transmitted start command[0m
+[0;32mI (105167) TWAI Master: Driver stopped[0m
+[0;32mI (105167) TWAI Master: #################################[0m
+[0;32mI (105167) TWAI Master: Time elapsed: 972864 us[0m
+[0;32mI (105167) TWAI Master: Rx missed: 0[0m
+[0;32mI (105177) TWAI Master: Rx overrun: 0[0m
+[0;32mI (105177) TWAI Master: Tx failed: 17[0m
+[0;32mI (105187) TWAI Master: Bus errors: 18[0m
+[0;32mI (105187) TWAI Master: #################################[0m
+[0;32mI (106197) TWAI Master: Driver uninstalled[0m
+[0;32mI (106197) main_task: Returned from app_main()[0m

@@ -1,0 +1,453 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7076
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF 5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  9 2024 21:24:33[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a624h ( 42532) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001a64c vaddr=3ffb0000 size=02164h (  8548) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001c7b8 vaddr=40080000 size=03860h ( 14432) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16848h ( 92232) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=00036870 vaddr=40083860 size=08c08h ( 35848) load[0m
+[0;32mI (189) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (189) boot: Disabling RNG early entropy source...[0m
+[0;32mI (200) cpu_start: Multicore app[0m
+[0;32mI (200) cpu_start: Pro cpu up.[0m
+[0;32mI (201) cpu_start: Starting app cpu, entry point is 0x40081644[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (218) cpu_start: Pro cpu start user code[0m
+[0;32mI (218) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (218) cpu_start: Application information:[0m
+[0;32mI (223) cpu_start: Project name:     CAN-test-slave[0m
+[0;32mI (229) cpu_start: App version:      f501904-dirty[0m
+[0;32mI (234) cpu_start: Compile time:     Apr  9 2024 21:23:59[0m
+[0;32mI (240) cpu_start: ELF file SHA256:  4731c14e257401da...[0m
+[0;32mI (246) cpu_start: ESP-IDF:          5.1.2[0m
+[0;32mI (251) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (256) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (261) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (266) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (273) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (279) heap_init: At 3FFB2A28 len 0002D5D8 (181 KiB): DRAM[0m
+[0;32mI (285) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (291) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (298) heap_init: At 4008C468 len 00013B98 (78 KiB): IRAM[0m
+[0;32mI (305) spi_flash: detected chip: generic[0m
+[0;32mI (308) spi_flash: flash io: dio[0m
+[0;32mI (313) app_start: Starting scheduler on CPU0[0m
+[0;32mI (317) app_start: Starting scheduler on CPU1[0m
+[0;32mI (317) main_task: Started on CPU0[0m
+[0;32mI (327) main_task: Calling app_main()[0m
+Slave starting in 3
+Slave starting in 2
+Slave starting in 1
+[0;32mI (3327) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3327) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3327) TWAI Slave: Results for 50kbit[0m
+[0;32mI (3337) TWAI Slave: Alerts configured[0m
+[0;32mI (3337) TWAI Slave: Driver started[0m
+[0;32mI (3347) TWAI Slave: Listening for ping[0m
+[0;32mI (3367) TWAI Slave: Received message with id 162[0m
+[0;32mI (3367) TWAI Slave: Listening for start command[0m
+[0;32mI (3867) TWAI Slave: Transmitted ping response successfully[0m
+[0;32mI (3867) TWAI Slave: Start transmitting data[0m
+[0;32mI (45627) TWAI Slave: Nr of data transmissions: 25008[0m
+[0;32mI (45627) TWAI Slave: Transmitted stop response[0m
+[0;32mI (45727) TWAI Slave: #################################[0m
+[0;32mI (45727) TWAI Slave: Time elapsed: 42378021 us[0m
+[0;32mI (45727) TWAI Slave: Rx missed: 0[0m
+[0;32mI (45727) TWAI Slave: Rx overrun: 0[0m
+[0;32mI (45727) TWAI Slave: Tx failed: 0[0m
+[0;32mI (45737) TWAI Slave: Bus errors: 0[0m
+[0;32mI (45737) TWAI Slave: Arbitration lost: 1[0m
+[0;32mI (45747) TWAI Slave: #################################[0m
+[0;32mI (45747) TWAI Slave: Driver stopped[0m
+[0;32mI (46757) TWAI Slave: Driver started[0m
+[0;32mI (46757) TWAI Slave: Listening for ping[0m
+[0;32mI (46907) TWAI Slave: Received message with id 162[0m
+[0;32mI (46907) TWAI Slave: Listening for start command[0m
+[0;32mI (47407) TWAI Slave: Transmitted ping response successfully[0m
+[0;32mI (47407) TWAI Slave: Start transmitting data[0m
+[0;32mI (88957) TWAI Slave: Nr of data transmissions: 25008[0m
+[0;32mI (88957) TWAI Slave: Transmitted stop response[0m
+[0;32mI (89057) TWAI Slave: #################################[0m
+[0;32mI (89057) TWAI Slave: Time elapsed: 42299859 us[0m
+[0;32mI (89057) TWAI Slave: Rx missed: 0[0m
+[0;32mI (89057) TWAI Slave: Rx overrun: 0[0m
+[0;32mI (89057) TWAI Slave: Tx failed: 0[0m
+[0;32mI (89067) TWAI Slave: Bus errors: 0[0m
+[0;32mI (89067) TWAI Slave: Arbitration lost: 2[0m
+[0;32mI (89077) TWAI Slave: #################################[0m
+[0;32mI (89077) TWAI Slave: Driver stopped[0m
+[0;32mI (90087) TWAI Slave: Driver started[0m
+[0;32mI (90087) TWAI Slave: Listening for ping[0m
+[0;32mI (90237) TWAI Slave: Received message with id 162[0m
+[0;32mI (90237) TWAI Slave: Listening for start command[0m
+[0;32mI (90737) TWAI Slave: Transmitted ping response successfully[0m
+[0;32mI (90737) TWAI Slave: Start transmitting data[0m
+[0;32mI (132177) TWAI Slave: Nr of data transmissions: 25008[0m
+[0;32mI (132177) TWAI Slave: Transmitted stop response[0m
+[0;32mI (132277) TWAI Slave: #################################[0m
+[0;32mI (132277) TWAI Slave: Time elapsed: 42189859 us[0m
+[0;32mI (132277) TWAI Slave: Rx missed: 0[0m
+[0;32mI (132277) TWAI Slave: Rx overrun: 0[0m
+[0;32mI (132277) TWAI Slave: Tx failed: 0[0m
+[0;32mI (132287) TWAI Slave: Bus errors: 0[0m
+[0;32mI (132287) TWAI Slave: Arbitration lost: 3[0m
+[0;32mI (132297) TWAI Slave: #################################[0m
+[0;32mI (132297) TWAI Slave: Driver stopped[0m
+[0;32mI (133307) TWAI Slave: Driver started[0m
+[0;32mI (133307) TWAI Slave: Listening for ping[0m
+[0;32mI (133457) TWAI Slave: Received message with id 162[0m
+[0;32mI (133457) TWAI Slave: Listening for start command[0m
+[0;32mI (133957) TWAI Slave: Transmitted ping response successfully[0m
+[0;32mI (133957) TWAI Slave: Start transmitting data[0m
+[0;32mI (175507) TWAI Slave: Nr of data transmissions: 25008[0m
+[0;32mI (175507) TWAI Slave: Transmitted stop response[0m
+[0;32mI (175607) TWAI Slave: #################################[0m
+[0;32mI (175607) TWAI Slave: Time elapsed: 42299857 us[0m
+[0;32mI (175607) TWAI Slave: Rx missed: 0[0m
+[0;32mI (175607) TWAI Slave: Rx overrun: 0[0m
+[0;32mI (175607) TWAI Slave: Tx failed: 0[0m
+[0;32mI (175617) TWAI Slave: Bus errors: 0[0m
+[0;32mI (175617) TWAI Slave: Arbitration lost: 4[0m
+[0;32mI (175627) TWAI Slave: #################################[0m
+[0;32mI (175627) TWAI Slave: Driver stopped[0m
+[0;32mI (176637) TWAI Slave: Driver started[0m
+[0;32mI (176637) TWAI Slave: Listening for ping[0m
+[0;32mI (176787) TWAI Slave: Received message with id 162[0m
+[0;32mI (176787) TWAI Slave: Listening for start command[0m
+[0;32mI (177287) TWAI Slave: Transmitted ping response successfully[0m
+[0;32mI (177287) TWAI Slave: Start transmitting data[0m
+[0;32mI (218717) TWAI Slave: Nr of data transmissions: 25008[0m
+[0;32mI (218727) TWAI Slave: Transmitted stop response[0m
+[0;33mW (218777) TWAI: Alert 256[0m
+[0;31mE (218787) TWAI: Alert 4096[0m
+[0;32mI (218827) TWAI Slave: #################################[0m
+[0;32mI (218827) TWAI Slave: Time elapsed: 42189857 us[0m
+[0;32mI (218827) TWAI Slave: Rx missed: 0[0m
+[0;32mI (218827) TWAI Slave: Rx overrun: 0[0m
+[0;32mI (218827) TWAI Slave: Tx failed: 0[0m
+[0;32mI (218837) TWAI Slave: Bus errors: 0[0m
+[0;32mI (218837) TWAI Slave: Arbitration lost: 5[0m
+[0;32mI (218847) TWAI Slave: #################################[0m
+[0;32mI (218847) TWAI Slave: Driver stopped[0m
+[0;32mI (219857) TWAI Slave: Driver uninstalled[0m
+Slave starting in 3
+Slave starting in 2
+Slave starting in 1
+[0;32mI (222857) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (222857) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (222857) TWAI Slave: Results for 125kbit[0m
+[0;32mI (222867) TWAI Slave: Alerts configured[0m
+[0;32mI (222867) TWAI Slave: Driver started[0m
+[0;32mI (222877) TWAI Slave: Listening for ping[0m
+[0;32mI (223027) TWAI Slave: Received message with id 162[0m
+[0;32mI (223027) TWAI Slave: Listening for start command[0m
+[0;32mI (223527) TWAI Slave: Transmitted ping response successfully[0m
+[0;32mI (223527) TWAI Slave: Start transmitting data[0m
+[0;32mI (240107) TWAI Slave: Nr of data transmissions: 25008[0m
+[0;32mI (240107) TWAI Slave: Transmitted stop response[0m
+[0;32mI (240207) TWAI Slave: #################################[0m
+[0;32mI (240207) TWAI Slave: Time elapsed: 17327429 us[0m
+[0;32mI (240207) TWAI Slave: Rx missed: 0[0m
+[0;32mI (240207) TWAI Slave: Rx overrun: 0[0m
+[0;32mI (240207) TWAI Slave: Tx failed: 0[0m
+[0;32mI (240217) TWAI Slave: Bus errors: 0[0m
+[0;32mI (240217) TWAI Slave: Arbitration lost: 1[0m
+[0;32mI (240227) TWAI Slave: #################################[0m
+[0;32mI (240227) TWAI Slave: Driver stopped[0m
+[0;32mI (241237) TWAI Slave: Driver started[0m
+[0;32mI (241237) TWAI Slave: Listening for ping[0m
+[0;32mI (241387) TWAI Slave: Received message with id 162[0m
+[0;32mI (241387) TWAI Slave: Listening for start command[0m
+[0;32mI (241887) TWAI Slave: Transmitted ping response successfully[0m
+[0;32mI (241887) TWAI Slave: Start transmitting data[0m
+[0;32mI (258517) TWAI Slave: Nr of data transmissions: 25008[0m
+[0;32mI (258517) TWAI Slave: Transmitted stop response[0m
+[0;32mI (258617) TWAI Slave: #################################[0m
+[0;32mI (258617) TWAI Slave: Time elapsed: 17379857 us[0m
+[0;32mI (258617) TWAI Slave: Rx missed: 0[0m
+[0;32mI (258617) TWAI Slave: Rx overrun: 0[0m
+[0;32mI (258617) TWAI Slave: Tx failed: 0[0m
+[0;32mI (258627) TWAI Slave: Bus errors: 0[0m
+[0;32mI (258627) TWAI Slave: Arbitration lost: 2[0m
+[0;32mI (258637) TWAI Slave: #################################[0m
+[0;32mI (258637) TWAI Slave: Driver stopped[0m
+[0;32mI (259647) TWAI Slave: Driver started[0m
+[0;32mI (259647) TWAI Slave: Listening for ping[0m
+[0;32mI (259797) TWAI Slave: Received message with id 162[0m
+[0;32mI (259797) TWAI Slave: Listening for start command[0m
+[0;32mI (260297) TWAI Slave: Transmitted ping response successfully[0m
+[0;32mI (260297) TWAI Slave: Start transmitting data[0m
+[0;32mI (276877) TWAI Slave: Nr of data transmissions: 25008[0m
+[0;32mI (276877) TWAI Slave: Transmitted stop response[0m
+[0;32mI (276977) TWAI Slave: #################################[0m
+[0;32mI (276977) TWAI Slave: Time elapsed: 17329857 us[0m
+[0;32mI (276977) TWAI Slave: Rx missed: 0[0m
+[0;32mI (276977) TWAI Slave: Rx overrun: 0[0m
+[0;32mI (276977) TWAI Slave: Tx failed: 0[0m
+[0;32mI (276987) TWAI Slave: Bus errors: 0[0m
+[0;32mI (276987) TWAI Slave: Arbitration lost: 3[0m
+[0;32mI (276997) TWAI Slave: #################################[0m
+[0;32mI (276997) TWAI Slave: Driver stopped[0m
+[0;32mI (278007) TWAI Slave: Driver started[0m
+[0;32mI (278007) TWAI Slave: Listening for ping[0m
+[0;32mI (278157) TWAI Slave: Received message with id 162[0m
+[0;32mI (278157) TWAI Slave: Listening for start command[0m
+[0;32mI (278657) TWAI Slave: Transmitted ping response successfully[0m
+[0;32mI (278657) TWAI Slave: Start transmitting data[0m
+[0;32mI (295237) TWAI Slave: Nr of data transmissions: 25008[0m
+[0;32mI (295237) TWAI Slave: Transmitted stop response[0m
+[0;32mI (295337) TWAI Slave: #################################[0m
+[0;32mI (295337) TWAI Slave: Time elapsed: 17329857 us[0m
+[0;32mI (295337) TWAI Slave: Rx missed: 0[0m
+[0;32mI (295337) TWAI Slave: Rx overrun: 0[0m
+[0;32mI (295337) TWAI Slave: Tx failed: 0[0m
+[0;32mI (295347) TWAI Slave: Bus errors: 0[0m
+[0;32mI (295347) TWAI Slave: Arbitration lost: 4[0m
+[0;32mI (295357) TWAI Slave: #################################[0m
+[0;32mI (295357) TWAI Slave: Driver stopped[0m
+[0;32mI (296367) TWAI Slave: Driver started[0m
+[0;32mI (296367) TWAI Slave: Listening for ping[0m
+[0;32mI (296517) TWAI Slave: Received message with id 162[0m
+[0;32mI (296517) TWAI Slave: Listening for start command[0m
+[0;32mI (297017) TWAI Slave: Transmitted ping response successfully[0m
+[0;32mI (297017) TWAI Slave: Start transmitting data[0m
+[0;32mI (313607) TWAI Slave: Nr of data transmissions: 25008[0m
+[0;32mI (313607) TWAI Slave: Transmitted stop response[0m
+[0;33mW (313657) TWAI: Alert 256[0m
+[0;31mE (313667) TWAI: Alert 4096[0m
+[0;32mI (313707) TWAI Slave: #################################[0m
+[0;32mI (313707) TWAI Slave: Time elapsed: 17339857 us[0m
+[0;32mI (313707) TWAI Slave: Rx missed: 0[0m
+[0;32mI (313707) TWAI Slave: Rx overrun: 0[0m
+[0;32mI (313707) TWAI Slave: Tx failed: 0[0m
+[0;32mI (313717) TWAI Slave: Bus errors: 0[0m
+[0;32mI (313717) TWAI Slave: Arbitration lost: 5[0m
+[0;32mI (313727) TWAI Slave: #################################[0m
+[0;32mI (313727) TWAI Slave: Driver stopped[0m
+[0;32mI (314737) TWAI Slave: Driver uninstalled[0m
+Slave starting in 3
+Slave starting in 2
+Slave starting in 1
+[0;32mI (317737) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (317737) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (317737) TWAI Slave: Results for 250kbit[0m
+[0;32mI (317747) TWAI Slave: Alerts configured[0m
+[0;32mI (317747) TWAI Slave: Driver started[0m
+[0;32mI (317757) TWAI Slave: Listening for ping[0m
+[0;32mI (317907) TWAI Slave: Received message with id 162[0m
+[0;32mI (317907) TWAI Slave: Listening for start command[0m
+[0;32mI (318407) TWAI Slave: Transmitted ping response successfully[0m
+[0;32mI (318407) TWAI Slave: Start transmitting data[0m
+[0;32mI (326807) TWAI Slave: Nr of data transmissions: 25008[0m
+[0;32mI (326807) TWAI Slave: Transmitted stop response[0m
+[0;32mI (326907) TWAI Slave: #################################[0m
+[0;32mI (326907) TWAI Slave: Time elapsed: 9147456 us[0m
+[0;32mI (326907) TWAI Slave: Rx missed: 0[0m
+[0;32mI (326907) TWAI Slave: Rx overrun: 0[0m
+[0;32mI (326907) TWAI Slave: Tx failed: 0[0m
+[0;32mI (326917) TWAI Slave: Bus errors: 0[0m
+[0;32mI (326917) TWAI Slave: Arbitration lost: 1[0m
+[0;32mI (326927) TWAI Slave: #################################[0m
+[0;32mI (326927) TWAI Slave: Driver stopped[0m
+[0;32mI (327937) TWAI Slave: Driver started[0m
+[0;32mI (327937) TWAI Slave: Listening for ping[0m
+[0;32mI (328087) TWAI Slave: Received message with id 162[0m
+[0;32mI (328087) TWAI Slave: Listening for start command[0m
+[0;32mI (328587) TWAI Slave: Transmitted ping response successfully[0m
+[0;32mI (328587) TWAI Slave: Start transmitting data[0m
+[0;32mI (336987) TWAI Slave: Nr of data transmissions: 25008[0m
+[0;32mI (336987) TWAI Slave: Transmitted stop response[0m
+[0;32mI (337087) TWAI Slave: #################################[0m
+[0;32mI (337087) TWAI Slave: Time elapsed: 9149857 us[0m
+[0;32mI (337087) TWAI Slave: Rx missed: 0[0m
+[0;32mI (337087) TWAI Slave: Rx overrun: 0[0m
+[0;32mI (337087) TWAI Slave: Tx failed: 0[0m
+[0;32mI (337097) TWAI Slave: Bus errors: 0[0m
+[0;32mI (337097) TWAI Slave: Arbitration lost: 2[0m
+[0;32mI (337107) TWAI Slave: #################################[0m
+[0;32mI (337107) TWAI Slave: Driver stopped[0m
+[0;32mI (338117) TWAI Slave: Driver started[0m
+[0;32mI (338117) TWAI Slave: Listening for ping[0m
+[0;32mI (338257) TWAI Slave: Received message with id 162[0m
+[0;32mI (338257) TWAI Slave: Listening for start command[0m
+[0;32mI (338757) TWAI Slave: Transmitted ping response successfully[0m
+[0;32mI (338757) TWAI Slave: Start transmitting data[0m
+[0;32mI (347037) TWAI Slave: Nr of data transmissions: 25008[0m
+[0;32mI (347037) TWAI Slave: Transmitted stop response[0m
+[0;32mI (347137) TWAI Slave: #################################[0m
+[0;32mI (347137) TWAI Slave: Time elapsed: 9019857 us[0m
+[0;32mI (347137) TWAI Slave: Rx missed: 0[0m
+[0;32mI (347137) TWAI Slave: Rx overrun: 0[0m
+[0;32mI (347137) TWAI Slave: Tx failed: 0[0m
+[0;32mI (347147) TWAI Slave: Bus errors: 0[0m
+[0;32mI (347147) TWAI Slave: Arbitration lost: 3[0m
+[0;32mI (347157) TWAI Slave: #################################[0m
+[0;32mI (347157) TWAI Slave: Driver stopped[0m
+[0;32mI (348167) TWAI Slave: Driver started[0m
+[0;32mI (348167) TWAI Slave: Listening for ping[0m
+[0;32mI (348317) TWAI Slave: Received message with id 162[0m
+[0;32mI (348317) TWAI Slave: Listening for start command[0m
+[0;32mI (348817) TWAI Slave: Transmitted ping response successfully[0m
+[0;32mI (348817) TWAI Slave: Start transmitting data[0m
+[0;32mI (357117) TWAI Slave: Nr of data transmissions: 25008[0m
+[0;32mI (357117) TWAI Slave: Transmitted stop response[0m
+[0;32mI (357217) TWAI Slave: #################################[0m
+[0;32mI (357217) TWAI Slave: Time elapsed: 9049857 us[0m
+[0;32mI (357217) TWAI Slave: Rx missed: 0[0m
+[0;32mI (357217) TWAI Slave: Rx overrun: 0[0m
+[0;32mI (357217) TWAI Slave: Tx failed: 0[0m
+[0;32mI (357227) TWAI Slave: Bus errors: 0[0m
+[0;32mI (357227) TWAI Slave: Arbitration lost: 4[0m
+[0;32mI (357237) TWAI Slave: #################################[0m
+[0;32mI (357237) TWAI Slave: Driver stopped[0m
+[0;32mI (358247) TWAI Slave: Driver started[0m
+[0;32mI (358247) TWAI Slave: Listening for ping[0m
+[0;32mI (358397) TWAI Slave: Received message with id 162[0m
+[0;32mI (358397) TWAI Slave: Listening for start command[0m
+[0;32mI (358897) TWAI Slave: Transmitted ping response successfully[0m
+[0;32mI (358897) TWAI Slave: Start transmitting data[0m
+[0;32mI (367177) TWAI Slave: Nr of data transmissions: 25008[0m
+[0;32mI (367177) TWAI Slave: Transmitted stop response[0m
+[0;33mW (367237) TWAI: Alert 256[0m
+[0;31mE (367247) TWAI: Alert 4096[0m
+[0;32mI (367277) TWAI Slave: #################################[0m
+[0;32mI (367277) TWAI Slave: Time elapsed: 9029857 us[0m
+[0;32mI (367277) TWAI Slave: Rx missed: 0[0m
+[0;32mI (367277) TWAI Slave: Rx overrun: 0[0m
+[0;32mI (367277) TWAI Slave: Tx failed: 0[0m
+[0;32mI (367287) TWAI Slave: Bus errors: 0[0m
+[0;32mI (367287) TWAI Slave: Arbitration lost: 5[0m
+[0;32mI (367297) TWAI Slave: #################################[0m
+[0;32mI (367297) TWAI Slave: Driver stopped[0m
+[0;32mI (368307) TWAI Slave: Driver uninstalled[0m
+Slave starting in 3
+Slave starting in 2
+Slave starting in 1
+[0;32mI (371307) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (371307) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (371307) TWAI Slave: Results for 500kbit[0m
+[0;32mI (371317) TWAI Slave: Alerts configured[0m
+[0;32mI (371317) TWAI Slave: Driver started[0m
+[0;32mI (371327) TWAI Slave: Listening for ping[0m
+[0;32mI (371477) TWAI Slave: Received message with id 162[0m
+[0;32mI (371477) TWAI Slave: Listening for start command[0m
+[0;32mI (371977) TWAI Slave: Transmitted ping response successfully[0m
+[0;32mI (371977) TWAI Slave: Start transmitting data[0m
+[0;32mI (376257) TWAI Slave: Nr of data transmissions: 25008[0m
+[0;32mI (376257) TWAI Slave: Transmitted stop response[0m
+[0;32mI (376357) TWAI Slave: #################################[0m
+[0;32mI (376357) TWAI Slave: Time elapsed: 5027460 us[0m
+[0;32mI (376357) TWAI Slave: Rx missed: 0[0m
+[0;32mI (376357) TWAI Slave: Rx overrun: 0[0m
+[0;32mI (376357) TWAI Slave: Tx failed: 0[0m
+[0;32mI (376367) TWAI Slave: Bus errors: 0[0m
+[0;32mI (376367) TWAI Slave: Arbitration lost: 0[0m
+[0;32mI (376377) TWAI Slave: #################################[0m
+[0;32mI (376377) TWAI Slave: Driver stopped[0m
+[0;32mI (377387) TWAI Slave: Driver started[0m
+[0;32mI (377387) TWAI Slave: Listening for ping[0m
+[0;32mI (377537) TWAI Slave: Received message with id 162[0m
+[0;32mI (377537) TWAI Slave: Listening for start command[0m
+[0;32mI (378037) TWAI Slave: Transmitted ping response successfully[0m
+[0;32mI (378037) TWAI Slave: Start transmitting data[0m
+[0;32mI (382337) TWAI Slave: Nr of data transmissions: 25008[0m
+[0;32mI (382337) TWAI Slave: Transmitted stop response[0m
+[0;32mI (382437) TWAI Slave: #################################[0m
+[0;32mI (382437) TWAI Slave: Time elapsed: 5049857 us[0m
+[0;32mI (382437) TWAI Slave: Rx missed: 0[0m
+[0;32mI (382437) TWAI Slave: Rx overrun: 0[0m
+[0;32mI (382437) TWAI Slave: Tx failed: 0[0m
+[0;32mI (382447) TWAI Slave: Bus errors: 0[0m
+[0;32mI (382447) TWAI Slave: Arbitration lost: 0[0m
+[0;32mI (382457) TWAI Slave: #################################[0m
+[0;32mI (382457) TWAI Slave: Driver stopped[0m
+[0;32mI (383467) TWAI Slave: Driver started[0m
+[0;32mI (383467) TWAI Slave: Listening for ping[0m
+[0;32mI (383607) TWAI Slave: Received message with id 162[0m
+[0;32mI (383607) TWAI Slave: Listening for start command[0m
+[0;32mI (384107) TWAI Slave: Transmitted ping response successfully[0m
+[0;32mI (384107) TWAI Slave: Start transmitting data[0m
+[0;32mI (388407) TWAI Slave: Nr of data transmissions: 25008[0m
+[0;32mI (388407) TWAI Slave: Transmitted stop response[0m
+[0;32mI (388507) TWAI Slave: #################################[0m
+[0;32mI (388507) TWAI Slave: Time elapsed: 5039857 us[0m
+[0;32mI (388507) TWAI Slave: Rx missed: 0[0m
+[0;32mI (388507) TWAI Slave: Rx overrun: 0[0m
+[0;32mI (388507) TWAI Slave: Tx failed: 0[0m
+[0;32mI (388517) TWAI Slave: Bus errors: 0[0m
+[0;32mI (388517) TWAI Slave: Arbitration lost: 0[0m
+[0;32mI (388527) TWAI Slave: #################################[0m
+[0;32mI (388527) TWAI Slave: Driver stopped[0m
+[0;32mI (389537) TWAI Slave: Driver started[0m
+[0;32mI (389537) TWAI Slave: Listening for ping[0m
+[0;32mI (389677) TWAI Slave: Received message with id 162[0m
+[0;32mI (389677) TWAI Slave: Listening for start command[0m
+[0;32mI (390177) TWAI Slave: Transmitted ping response successfully[0m
+[0;32mI (390177) TWAI Slave: Start transmitting data[0m
+[0;32mI (394467) TWAI Slave: Nr of data transmissions: 25008[0m
+[0;32mI (394467) TWAI Slave: Transmitted stop response[0m
+[0;32mI (394567) TWAI Slave: #################################[0m
+[0;32mI (394567) TWAI Slave: Time elapsed: 5029857 us[0m
+[0;32mI (394567) TWAI Slave: Rx missed: 0[0m
+[0;32mI (394567) TWAI Slave: Rx overrun: 0[0m
+[0;32mI (394567) TWAI Slave: Tx failed: 0[0m
+[0;32mI (394577) TWAI Slave: Bus errors: 0[0m
+[0;32mI (394577) TWAI Slave: Arbitration lost: 0[0m
+[0;32mI (394587) TWAI Slave: #################################[0m
+[0;32mI (394587) TWAI Slave: Driver stopped[0m
+[0;32mI (395597) TWAI Slave: Driver started[0m
+[0;32mI (395597) TWAI Slave: Listening for ping[0m
+[0;32mI (395747) TWAI Slave: Received message with id 162[0m
+[0;32mI (395747) TWAI Slave: Listening for start command[0m
+[0;32mI (396247) TWAI Slave: Transmitted ping response successfully[0m
+[0;32mI (396247) TWAI Slave: Start transmitting data[0m
+[0;32mI (400537) TWAI Slave: Nr of data transmissions: 25008[0m
+[0;32mI (400537) TWAI Slave: Transmitted stop response[0m
+[0;33mW (400597) TWAI: Alert 256[0m
+[0;31mE (400597) TWAI: Alert 4096[0m
+[0;32mI (400637) TWAI Slave: #################################[0m
+[0;32mI (400637) TWAI Slave: Time elapsed: 5039857 us[0m
+[0;32mI (400637) TWAI Slave: Rx missed: 0[0m
+[0;32mI (400637) TWAI Slave: Rx overrun: 0[0m
+[0;32mI (400637) TWAI Slave: Tx failed: 0[0m
+[0;32mI (400647) TWAI Slave: Bus errors: 0[0m
+[0;32mI (400647) TWAI Slave: Arbitration lost: 0[0m
+[0;32mI (400657) TWAI Slave: #################################[0m
+[0;32mI (400657) TWAI Slave: Driver stopped[0m
+[0;32mI (401667) TWAI Slave: Driver uninstalled[0m
+Slave starting in 3
+Slave starting in 2
+Slave starting in 1
+[0;32mI (404667) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (404667) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (404667) TWAI Slave: Results for 800kbit[0m
+[0;32mI (404677) TWAI Slave: Alerts configured[0m
+[0;32mI (404677) TWAI Slave: Driver started[0m
+[0;32mI (404687) TWAI Slave: Listening for ping[0m
+[0;32mI (404837) TWAI Slave: Received message with id 162[0m
+[0;32mI (404837) TWAI Slave: Listening for start command[0m
+[0;33mW (404837) TWAI: Alert 256[0m
+[0;31mE (404837) TWAI: Alert 8192[0m
